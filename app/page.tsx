@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-b from-black via-[#081208] to-black text-white overflow-hidden">
 
       {/* HERO */}
-      <section className="relative min-h-screen overflow-hidden bg-black">
+      <section className="relative min-h-[100svh] overflow-hidden bg-gradient-to-b from-black via-[#071107] to-black">
 
         {/* GLOWS */}
         <div className="absolute top-[-400px] left-[-300px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[250px] rounded-full"></div>
@@ -16,7 +16,7 @@ export default function Home() {
         <div className="absolute right-[-250px] top-[200px] w-[600px] h-[600px] border border-lime-400/40 rotate-45 shadow-[0_0_120px_rgba(163,230,53,0.8)]"></div>
 
         {/* NAVBAR */}
-        <header className="relative z-50 flex items-center justify-between px-6 md:px-16 py-6 border-b border-lime-400/10">
+        <header className="relative z-50 flex items-center justify-between px-5 sm:px-6 md:px-16 py-5 md:py-6 border-b border-lime-400/10">
 
           {/* LOGO */}
           <div className="flex items-center gap-4">
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
 
           {/* MENU */}
-          <nav className="hidden md:flex gap-10 uppercase text-sm font-bold">
+          <nav className="hidden lg:flex gap-10 uppercase text-sm font-bold">
 
             <a
               href="#"
@@ -90,9 +90,9 @@ export default function Home() {
         </header>
 
         {/* HERO CONTENT */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 md:px-16">
 
-          <div className="grid md:grid-cols-2 gap-10 items-center min-h-screen">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center min-h-[100svh] py-24">
 
             {/* LEFT */}
             <div>
@@ -101,7 +101,7 @@ export default function Home() {
                 Treningi piłkarsko-motoryczne
               </p>
 
-              <h1 className="text-7xl md:text-[150px] font-black uppercase leading-[0.9]">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[150px] font-black uppercase leading-[0.9]">
 
                 <span className="text-white">
                   Better
@@ -115,17 +115,17 @@ export default function Home() {
 
               </h1>
 
-              <p className="mt-8 text-2xl text-gray-200 leading-relaxed max-w-2xl">
+              <p className="mt-8 text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed max-w-2xl">
                 Profesjonalne treningi dla dzieci i młodzieży w Warszawie.
                 Rozwijamy szybkość, motorykę i pewność siebie zawodników.
               </p>
 
               {/* BUTTONS */}
-              <div className="flex flex-wrap gap-5 mt-12">
+              <div className="flex flex-col sm:flex-row gap-5 mt-12">
 
                 <a
   href="#kontakt"
-  className="bg-lime-400 text-black px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition shadow-[0_0_60px_rgba(163,230,53,1)] inline-block"
+  className="w-full sm:w-auto text-center bg-lime-400 text-black px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition shadow-[0_0_60px_rgba(163,230,53,1)] inline-block"
 >
 
   Umów trening
@@ -148,7 +148,7 @@ export default function Home() {
               <img
                 src="/player.png"
                 alt="player"
-                className="relative z-10 h-[1000px] object-contain scale-125 drop-shadow-[0_0_180px_rgba(163,230,53,1)]"
+                className="relative z-10 h-[500px] sm:h-[650px] md:h-[800px] lg:h-[1000px] object-contain scale-100 lg:scale-125 drop-shadow-[0_0_180px_rgba(163,230,53,1)]"
               />
 
             </div>
@@ -162,7 +162,7 @@ export default function Home() {
       {/* OFFER SECTION */}
       <section
         id="oferta"
-        className="relative py-40 px-6 md:px-16 overflow-hidden bg-[#050505]"
+        className="relative py-28 md:py-40 px-5 sm:px-6 md:px-16 overflow-hidden bg-gradient-to-b from-black via-[#071107] to-black"
       >
 
         {/* BACKGROUND GLOWS */}
@@ -193,7 +193,7 @@ export default function Home() {
               Nasza oferta
             </p>
 
-            <h2 className="text-6xl md:text-8xl font-black uppercase leading-none">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black uppercase leading-none">
 
               Better
               <span className="text-lime-400 drop-shadow-[0_0_30px_rgba(163,230,53,1)]">
@@ -205,7 +205,7 @@ export default function Home() {
           </div>
 
           {/* CARDS */}
-          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
 
             {/* CARD 1 */}
             <div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
@@ -226,7 +226,7 @@ export default function Home() {
                       Oferta główna
                     </p>
 
-                    <h3 className="text-5xl font-black leading-none">
+                    <h3 className="text-3xl sm:text-4xl md:text-5xl font-black leading-none">
 
                       Trening
                       <br />
@@ -292,7 +292,7 @@ export default function Home() {
                 </p>
 
                 {/* FEATURES */}
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
 
                   <div className="bg-black/40 border border-lime-400/10 rounded-2xl p-4">
                     ⚡ Sprint i szybkość
@@ -445,7 +445,7 @@ export default function Home() {
 
   <div className="relative z-10 max-w-7xl mx-auto">
 
-    <div className="grid lg:grid-cols-2 gap-24 items-center">
+    <div className="grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
 
       {/* LEFT SIDE */}
       <div className="relative">
@@ -456,7 +456,7 @@ export default function Home() {
           <img
             src="/trener.jpg"
             alt="Michael Kukulski"
-            className="w-full h-[820px] object-cover object-top"
+            className="w-full h-[420px] sm:h-[550px] md:h-[700px] lg:h-[820px] object-cover object-top"
           />
 
         </div>
@@ -470,7 +470,7 @@ export default function Home() {
           O mnie
         </p>
 
-        <h2 className="text-6xl md:text-8xl font-black uppercase leading-none mb-12">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black uppercase leading-none mb-12">
 
           Michael
           <br />
@@ -516,7 +516,7 @@ export default function Home() {
         </div>
 
         {/* STATS */}
-        <div className="grid grid-cols-3 gap-6 mt-14">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-14">
 
           <div className="bg-[#111111]/80 border border-lime-400/20 rounded-3xl p-8 text-center backdrop-blur-xl">
 
@@ -566,7 +566,7 @@ export default function Home() {
 {/* CONTACT SECTION */}
 <section
   id="kontakt"
-  className="relative py-40 px-6 md:px-16 overflow-hidden bg-black"
+  className="relative py-28 md:py-40 px-5 sm:px-6 md:px-16 overflow-hidden bg-gradient-to-b from-black via-[#071107] to-black"
 >
 
   {/* GLOWS */}
@@ -616,7 +616,7 @@ export default function Home() {
     </div>
 
     {/* CONTACT BOXES */}
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
       {/* PHONE */}
       <div className="bg-[#0d0d0d]/90 border border-lime-400/20 rounded-[35px] p-10 text-center hover:border-lime-400 transition hover:shadow-[0_0_60px_rgba(163,230,53,0.25)]">

@@ -1,9 +1,9 @@
 export default function PolkoloniePage() {
   return (
-    <main className="min-h-screen bg-black text-white overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-b from-black via-[#081208] to-black text-white overflow-hidden">
 
       {/* HERO */}
-      <section className="relative py-40 px-6 md:px-16 overflow-hidden">
+      <section className="relative py-28 md:py-40 px-5 sm:px-6 md:px-16 overflow-hidden">
 
         {/* GLOWS */}
         <div className="absolute top-[-300px] left-[-300px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[220px] rounded-full"></div>
@@ -30,7 +30,7 @@ export default function PolkoloniePage() {
             BetterOnField 2026
           </p>
 
-          <h1 className="text-6xl md:text-[120px] font-black uppercase leading-[0.9]">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[120px] font-black uppercase leading-[0.9]">
 
             Letnie
             <br />
@@ -41,19 +41,19 @@ export default function PolkoloniePage() {
 
           </h1>
 
-          <p className="mt-10 text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          <p className="mt-10 text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
             Wyjątkowe półkolonie piłkarsko-motoryczne dla dzieci i młodzieży.
             Przygotowujemy zawodników do nowego sezonu poprzez trening techniki,
             szybkości, motoryki i pewności siebie na boisku.
           </p>
 
           {/* CTA */}
-          <div className="flex flex-wrap justify-center gap-6 mt-14">
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mt-14">
 
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdWhnVY-SDOjvTqTVENRyjjxuKjHFaHFHTha7osuIiGio-w-Q/viewform"
               target="_blank"
-              className="bg-lime-400 text-black px-12 py-6 rounded-full font-black text-xl hover:scale-105 transition shadow-[0_0_80px_rgba(163,230,53,1)]"
+              className="w-full sm:w-auto text-center bg-lime-400 text-black px-12 py-6 rounded-full font-black text-lg md:text-xl hover:scale-105 transition shadow-[0_0_80px_rgba(163,230,53,1)]"
             >
               ⚽ Zapisz dziecko
             </a>
@@ -73,7 +73,7 @@ export default function PolkoloniePage() {
       </section>
 
       {/* PROGRAM */}
-      <section className="relative py-32 px-6 md:px-16 bg-[#050505]">
+      <section className="relative py-24 md:py-32 px-5 sm:px-6 md:px-16 bg-gradient-to-b from-black via-[#071107] to-black">
 
         <div className="max-w-7xl mx-auto">
 
@@ -96,7 +96,7 @@ export default function PolkoloniePage() {
           </div>
 
           {/* CARDS */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
             {[
               "⚽ Treningi piłkarskie",
@@ -109,7 +109,7 @@ export default function PolkoloniePage() {
 
               <div
                 key={index}
-                className="bg-[#0d0d0d]/90 border border-lime-400/20 rounded-[35px] p-10 hover:border-lime-400 transition hover:shadow-[0_0_60px_rgba(163,230,53,0.2)]"
+                className="bg-[#0d0d0d]/90 border border-lime-400/20rounded-[30px] p-7 md:p-10 hover:border-lime-400 transition hover:shadow-[0_0_60px_rgba(163,230,53,0.2)]"
               >
 
                 <h3 className="text-2xl font-black leading-relaxed">
@@ -126,7 +126,7 @@ export default function PolkoloniePage() {
 
       </section>
 {/* CAMPS */}
-<section className="relative py-32 px-6 md:px-16">
+<section className="relative py-24 md:py-32 px-5 sm:px-6 md:px-16">
 
   <div className="max-w-7xl mx-auto">
 
@@ -137,7 +137,7 @@ export default function PolkoloniePage() {
         Turnusy 2026
       </p>
 
-      <h2 className="text-5xl md:text-7xl font-black uppercase">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase">
 
         Terminy
         <span className="text-lime-400">
@@ -149,7 +149,7 @@ export default function PolkoloniePage() {
     </div>
 
     {/* CARDS */}
-    <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
 
       {[
         {
@@ -196,7 +196,7 @@ export default function PolkoloniePage() {
               {camp.title}
             </p>
 
-            <h3 className="text-4xl font-black leading-tight">
+            <h3 className="text-3xl md:text-4xl font-black leading-tight">
               {camp.date}
             </h3>
 
@@ -212,7 +212,7 @@ export default function PolkoloniePage() {
 
 </section>
 {/* DAILY PLAN */}
-<section className="relative py-32 px-6 md:px-16 bg-gradient-to-b from-black via-[#071107] to-black">
+<section className="relative py-24 md:py-32 px-5 sm:px-6 md:px-16 bg-gradient-to-b from-black via-[#071107] to-black">
 
   <div className="max-w-7xl mx-auto">
 
@@ -250,7 +250,7 @@ export default function PolkoloniePage() {
         <img
           src="/Plan polkoloni.png"
           alt="Plan półkolonii BetterOnField"
-          className="w-full h-auto"
+          className="w-full h-auto object-contain"
         />
 
       </div>
@@ -261,9 +261,9 @@ export default function PolkoloniePage() {
 
 </section>
       {/* FOOD */}
-      <section className="relative py-32 px-6 md:px-16">
+      <section className="relative py-24 md:py-32 px-5 sm:px-6 md:px-16">
 
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* LEFT */}
           <div>
@@ -309,13 +309,13 @@ export default function PolkoloniePage() {
 
             <div className="absolute inset-0 bg-lime-400/20 blur-[120px] rounded-[40px]"></div>
 
-            <div className="relative bg-[#0d0d0d] border border-lime-400/20 rounded-[40px] p-14">
+            <div className="relative bg-[#0d0d0d]/80 backdrop-blur-md border border-lime-400/20 rounded-[35px] p-8 md:p-14">
 
               <p className="text-gray-400 uppercase tracking-[5px] mb-6">
                 Cena za turnus
               </p>
 
-              <h3 className="text-7xl font-black text-lime-400 mb-10">
+              <h3 className="text-5xl md:text-7xl font-black text-lime-400 mb-10">
                 1100 zł
               </h3>
 
@@ -368,7 +368,7 @@ export default function PolkoloniePage() {
 
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
 
             <div className="bg-[#0d0d0d] border border-lime-400/20 rounded-[35px] p-10 text-center">
 
@@ -413,7 +413,7 @@ export default function PolkoloniePage() {
       </section>
 
       {/* IMPORTANT */}
-      <section className="relative py-32 px-6 md:px-16">
+      <section className="relative py-24 md:py-32 px-5 sm:px-6 md:px-16">
 
         <div className="max-w-5xl mx-auto text-center">
 
@@ -432,7 +432,7 @@ export default function PolkoloniePage() {
 
           </h2>
 
-          <div className="bg-[#0d0d0d]/90 border border-lime-400/20 rounded-[40px] p-12 text-left space-y-8 text-gray-300 text-lg leading-relaxed">
+          <div className="bg-[#0d0d0d]/90 border border-lime-400/20 rounded-[35px] p-7 md:p-12 text-left space-y-8 text-gray-300 text-lg leading-relaxed">
 
             <p>
               📌 Zadatek 300 zł jest bezzwrotny i płatny do 24 czerwca.
@@ -475,7 +475,7 @@ export default function PolkoloniePage() {
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdWhnVY-SDOjvTqTVENRyjjxuKjHFaHFHTha7osuIiGio-w-Q/viewform"
               target="_blank"
-              className="inline-flex items-center gap-4 bg-lime-400 text-black px-14 py-6 rounded-full font-black text-2xl hover:scale-105 transition shadow-[0_0_80px_rgba(163,230,53,1)]"
+              className="w-full sm:w-auto inline-flex justify-center items-center gap-4 bg-lime-400 text-black px-10 md:px-14 py-6 rounded-full font-black text-lg md:text-2xl hover:scale-105 transition shadow-[0_0_80px_rgba(163,230,53,1)]"
             >
 
               ⚽ Formularz zgłoszeniowy
