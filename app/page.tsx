@@ -145,13 +145,13 @@ export default function Home() {
               <div className="absolute w-[1700px] h-[1700px] bg-lime-400/30 rounded-full blur-[250px]"></div>
 
               {/* PLAYER */}
-              <img
-                src="/player.png"
-                alt="player"
-                <div className="pointer-events-none relative flex justify-center">
-              />
-
-            </div>
+             <div className="pointer-events-none relative flex justify-center">
+  <img
+    src="/player.png"
+    alt="player"
+    className="relative z-10 h-[500px] sm:h-[650px] md:h-[800px] lg:h-[1000px] object-contain scale-100 lg:scale-125 drop-shadow-[0_0_180px_rgba(163,230,53,1)]"
+  />
+</div>
 
           </div>
 
