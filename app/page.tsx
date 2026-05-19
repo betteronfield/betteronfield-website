@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-[#081208] to-black text-white overflow-hidden">
+    <main className="min-h-screen overflow-x-hidden bg-gradient-to-b from-black via-[#081208] to-black text-white">
 
       {/* HERO */}
       <section className="relative min-h-[100svh] overflow-hidden bg-gradient-to-b from-black via-[#071107] to-black">
@@ -217,7 +217,7 @@ export default function Home() {
               Nasza oferta
             </p>
 
-            <h2 className="text-6xl md:text-8xl font-black uppercase leading-none">
+            <h2 className="text-4xl md:text-8xl font-black uppercase leading-none">
 
               Better
               <span className="text-lime-400 drop-shadow-[0_0_30px_rgba(163,230,53,1)]">
@@ -250,7 +250,7 @@ export default function Home() {
                       Oferta główna
                     </p>
 
-                    <h3 className="text-5xl font-black leading-none">
+                    <h3 className="text-3xl md:text-3xl md:text-5xl font-black leading-none break-words">
 
                       Trening
                       <br />
@@ -358,7 +358,7 @@ export default function Home() {
                       🏕️
                     </div>
 
-                    <h3 className="text-5xl font-black uppercase leading-none text-lime-400">
+                    <h3 className="text-3xl md:text-5xl font-black uppercase leading-none text-lime-400 break-words">
                       Półkolonie
                     </h3>
 
@@ -494,7 +494,7 @@ export default function Home() {
           O mnie
         </p>
 
-        <h2 className="text-6xl md:text-8xl font-black uppercase leading-none mb-12">
+        <h2 className="text-4xl md:text-8xl font-black uppercase leading-none mb-12">
 
           Michael
           <br />
@@ -540,7 +540,7 @@ export default function Home() {
         </div>
 
         {/* STATS */}
-        <div className="grid grid-cols-3 gap-6 mt-14">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-14">
 
           <div className="bg-[#111111]/80 border border-lime-400/20 rounded-3xl p-8 text-center backdrop-blur-xl">
 
