@@ -92,7 +92,7 @@ export default function Home() {
         {/* HERO CONTENT */}
         <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 md:px-16">
 
-          <div className="grid md:grid-cols-2 gap-10 items-center min-h-screen">
+          <div className="grid md:grid-cols-2 gap-10 items-center min-h-screen pt-10 pb-[420px] lg:pb-0">
 
             {/* LEFT */}
             <div>
@@ -138,20 +138,41 @@ export default function Home() {
 
             </div>
 
-            {/* RIGHT PLAYER */}
-            <div className="pointer-events-none absolute lg:relative right-0 top-0 flex justify-center items-center z-0">
+           {/* RIGHT PLAYER */}
+<div
+  className="
+    pointer-events-none
+    absolute lg:relative
+    bottom-0
+    left-1/2 lg:left-auto
+    -translate-x-1/2 lg:translate-x-0
+    lg:right-0
+    flex justify-center items-end
+    z-0
+    w-full lg:w-auto
+  "
+>
 
-              {/* GLOW */}
-              <div className="absolute w-[1700px] h-[1700px] bg-lime-400/30 rounded-full blur-[250px]"></div>
+  {/* GLOW */}
+  <div className="absolute w-[700px] h-[700px] lg:w-[1700px] lg:h-[1700px] bg-lime-400/30 rounded-full blur-[180px] lg:blur-[250px]"></div>
 
-              {/* PLAYER */}
-              <img
-                src="/player.png"
-                alt="player"
-                className="relative z-10 h-[1000px] object-contain scale-125 drop-shadow-[0_0_180px_rgba(163,230,53,1)]"
-              />
+  {/* PLAYER */}
+  <img
+    src="/player.png"
+    alt="player"
+    className="
+      relative z-10
+      h-[420px]
+      sm:h-[520px]
+      md:h-[700px]
+      lg:h-[1000px]
+      object-contain
+      scale-100 lg:scale-125
+      drop-shadow-[0_0_120px_rgba(163,230,53,1)]
+    "
+  />
 
-            </div>
+</div>
 
           </div>
 
