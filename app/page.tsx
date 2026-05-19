@@ -125,7 +125,7 @@ export default function Home() {
 
                 <a
   href="#kontakt"
-  className="w-full sm:w-auto text-center bg-lime-400 text-black px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition shadow-[0_0_60px_rgba(163,230,53,1)] inline-block"
+  className="relative z-50 w-full sm:w-auto text-center bg-lime-400 text-black px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition shadow-[0_0_60px_rgba(163,230,53,1)] inline-block"
 >
 
   Umów trening
@@ -148,7 +148,7 @@ export default function Home() {
               <img
                 src="/player.png"
                 alt="player"
-                className="relative z-10 h-[500px] sm:h-[650px] md:h-[800px] lg:h-[1000px] object-contain scale-100 lg:scale-125 drop-shadow-[0_0_180px_rgba(163,230,53,1)]"
+                <div className="pointer-events-none relative flex justify-center">
               />
 
             </div>
