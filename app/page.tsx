@@ -92,7 +92,7 @@ export default function Home() {
         {/* HERO CONTENT */}
         <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 md:px-16">
 
-          <div className="grid md:grid-cols-2 gap-10 items-center min-h-screen pt-10 pb-[420px] lg:pb-0">
+          <div  className="grid md:grid-cols-2 gap-10 items-center min-h-screen pt-10">
 
             {/* LEFT */}
             <div>
@@ -138,9 +138,9 @@ export default function Home() {
 
             </div>
 
-           {/* RIGHT PLAYER */}
+{/* RIGHT PLAYER */}
 <div
- className="
+  className="
     pointer-events-none
     relative
     flex
@@ -148,7 +148,6 @@ export default function Home() {
     items-end
     z-0
     w-full
-    lg:w-auto
   "
 >
 
@@ -159,23 +158,21 @@ export default function Home() {
   <img
     src="/player.png"
     alt="player"
-   className="
-  relative
-  z-10
-  w-[90%]
-  max-w-[320px]
-  sm:max-w-[420px]
-  md:max-w-[520px]
-  lg:h-[1000px]
-  lg:max-w-none
-  object-contain
-  mx-auto
-  mt-10
-  lg:mt-0
-  scale-100
-  lg:scale-125
-  drop-shadow-[0_0_120px_rgba(163,230,53,1)]
-"
+    className="
+      relative
+      z-10
+      w-[90%]
+      max-w-[320px]
+      sm:max-w-[420px]
+      md:max-w-[520px]
+      lg:max-w-[700px]
+      object-contain
+      mx-auto
+      mt-10
+      scale-100
+      lg:scale-110
+      drop-shadow-[0_0_120px_rgba(163,230,53,1)]
+    "
   />
 
 </div>
