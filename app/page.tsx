@@ -145,7 +145,7 @@ export default function Home() {
               <div className="absolute w-[1700px] h-[1700px] bg-lime-400/30 rounded-full blur-[250px]"></div>
 
               {/* PLAYER */}
-             <div className="pointer-events-none relative flex justify-center">
+<div className="pointer-events-none relative flex justify-center">
   <img
     src="/player.png"
     alt="player"
