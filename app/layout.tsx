@@ -14,9 +14,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "BetterOnField | Treningi indywidualne piłkarsko-motoryczne",
-  description: "Indywidualne treningi piłkarskie i motoryczne. Rozwój techniki, szybkości, koordynacji i przygotowania zawodników.",
-}
+  description:
+    "Indywidualne treningi piłkarskie i motoryczne. Rozwój techniki, szybkości, koordynacji i przygotowania zawodników.",
 
+  verification: {
+    google: "z0ONWe4lMiqnyznogn0F7I",
+  },
+}
 export default function RootLayout({
   children,
 }: Readonly<{
