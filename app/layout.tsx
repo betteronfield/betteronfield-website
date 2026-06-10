@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Indywidualne treningi piłkarskie i motoryczne. Rozwój techniki, szybkości, koordynacji i przygotowania zawodników.",
 
   verification: {
-    google: "z0ONWe4lMiqnyznogn0F7I",
+    google: "z00NWe4IMiqnyznogn0F7I",
   },
 }
 export default function RootLayout({
