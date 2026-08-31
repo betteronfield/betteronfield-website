@@ -347,88 +347,104 @@ export default function Home() {
 
               <div className="relative z-10">
 
-                {/* TOP */}
-                <div className="relative h-[260px] rounded-[30px] overflow-hidden bg-gradient-to-br from-lime-400/20 via-black to-black border border-lime-400/20 flex items-center justify-center mb-12">
+                {/* PROMOCJA DLA NOWYCH */}
+<div className="relative rounded-[30px] overflow-hidden bg-gradient-to-br from-lime-400/20 via-black to-black border border-lime-400/20 p-8 md:p-10">
 
-                  <div className="absolute w-[350px] h-[350px] bg-lime-400/20 blur-[120px] rounded-full"></div>
+  <div className="absolute w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full -top-20 -right-20"></div>
 
-                  <div className="relative z-10 text-center">
+  <div className="relative z-10">
 
-                    <div className="text-7xl mb-4">
-                      🏕️
-                    </div>
+    <div className="text-5xl mb-4">
+      ⭐
+    </div>
 
-                    <h3 className="text-3xl md:text-5xl font-black uppercase leading-none text-lime-400 break-words">
-                      Półkolonie
-                    </h3>
+    <h3 className="text-3xl md:text-4xl font-black uppercase leading-none text-lime-400">
+      Promocja
+    </h3>
 
-                    <p className="text-gray-300 mt-4 uppercase tracking-[5px] text-sm">
-                      BetterOnField 2026
-                    </p>
+    <p className="text-white text-lg font-bold mt-2 uppercase">
+      Dla nowych zawodników
+    </p>
 
-                  </div>
+    <div className="mt-8 mb-6 rounded-2xl border border-lime-400/30 bg-black/40 p-5 text-center">
+      <p className="text-lime-400 text-xl font-black uppercase">
+        2 pierwsze treningi
+      </p>
+    </div>
 
-                </div>
+    <div className="space-y-4">
 
-                <p className="text-gray-200 text-lg leading-relaxed mb-10">
+      <div className="flex items-center justify-between border-b border-white/10 pb-3">
+        <span>1 osoba</span>
+        <span className="text-lime-400 font-black">120 zł</span>
+      </div>
 
-                  Półkolonie piłkarsko-motoryczne dla dzieci i młodzieży.
-                  Treningi techniki, szybkości, podań, strzału,
-                  koordynacji i motoryki.
+      <div className="flex items-center justify-between border-b border-white/10 pb-3">
+        <span>2 osoby</span>
+        <span className="text-lime-400 font-black">100 zł / os.</span>
+      </div>
 
-                </p>
+      <div className="flex items-center justify-between border-b border-white/10 pb-3">
+        <span>3–6 osób</span>
+        <span className="text-lime-400 font-black">80 zł / os.</span>
+      </div>
 
-                {/* FEATURES */}
-                <div className="space-y-4 mb-10">
+    </div>
 
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Treningi piłkarskie
-                  </div>
+    <p className="text-gray-400 text-sm leading-relaxed mt-6">
+      Od 3. treningu obowiązuje standardowy cennik.
+    </p>
 
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Treningi motoryczne
-                  </div>
+  </div>
 
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Siatkonoga i gry sportowe
-                  </div>
+</div>
 
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Profesjonalna kadra
-                  </div>
 
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Obiad i przekąski
-                  </div>
+{/* BONUS ZA REGULARNOŚĆ */}
+<div className="relative rounded-[30px] overflow-hidden bg-gradient-to-br from-lime-400/20 via-black to-black border border-lime-400/20 p-8 md:p-10">
 
-                </div>
+  <div className="absolute w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full -bottom-20 -right-20"></div>
 
-                {/* PRICE */}
-                <div className="flex items-end justify-between">
+  <div className="relative z-10">
 
-                  <div>
+    <div className="text-5xl mb-4">
+      🏆
+    </div>
 
-                    <p className="text-gray-400 mb-2">
-                      Cena za turnus
-                    </p>
+    <h3 className="text-3xl md:text-4xl font-black uppercase leading-none text-lime-400">
+      Bonus
+    </h3>
 
-                    <p className="text-5xl font-black text-lime-400">
-                      1100 zł
-                    </p>
+    <p className="text-white text-lg font-bold mt-2 uppercase">
+      Za regularność
+    </p>
 
-                  </div>
+    <div className="mt-8 rounded-2xl border border-lime-400/30 bg-black/40 p-6 text-center">
 
-                 <a
-  href="/polkolonie"
-  className="inline-block bg-lime-400 text-black px-8 py-4 rounded-full font-black hover:scale-105 transition shadow-[0_0_40px_rgba(163,230,53,0.8)]"
->
-  Więcej informacji
-</a>
+      <p className="text-3xl md:text-4xl font-black text-lime-400">
+        5 TRENINGÓW
+      </p>
+
+      <p className="text-2xl font-black text-white mt-2">
+        = -50 zł
+      </p>
+
+      <p className="text-gray-300 mt-3">
+        na kolejny trening
+      </p>
+
+    </div>
+
+    <div className="mt-8 flex items-center gap-3">
+      <span className="text-2xl">💚</span>
+      <p className="text-gray-300 font-semibold">
+        Trenuj regularnie. Zyskuj więcej.
+      </p>
+    </div>
+
+  </div>
+
+</div>
                   
 
                 </div>
