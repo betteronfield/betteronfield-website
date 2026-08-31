@@ -724,14 +724,14 @@ export default function Home() {
 
     </div>
 
-   {/* CTA */}
-<div className="mt-24 text-center flex justify-center gap-4">
+  {/* CTA */}
+<div className="mt-24 text-center flex justify-center gap-3">
 
   <a
     href="https://wa.me/48535678992"
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex w-64 justify-center items-center gap-4 bg-lime-400 text-black px-14 py-6 rounded-full font-black text-2xl hover:scale-105 transition shadow-[0_0_30px_rgba(163,230,53,0.6)]"
+    className="inline-flex w-40 sm:w-64 justify-center items-center gap-2 bg-lime-400 text-black px-4 sm:px-14 py-4 sm:py-6 rounded-full font-black text-base sm:text-2xl hover:scale-105 transition shadow-[0_0_30px_rgba(163,230,53,0.6)]"
   >
     🟢 Umów trening już dziś
   </a>
@@ -740,7 +740,7 @@ export default function Home() {
     href="https://docs.google.com/forms/d/e/1FAIpQLSc2SUqBX-jB5XUR0vQAktioumc216KvL-7uW_mXH3FqWxZqlg/viewform"
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex w-64 justify-center items-center gap-4 bg-lime-400 text-black px-14 py-6 rounded-full font-black text-2xl hover:scale-105 transition shadow-[0_0_30px_rgba(163,230,53,0.6)]"
+    className="inline-flex w-40 sm:w-64 justify-center items-center gap-2 bg-lime-400 text-black px-4 sm:px-14 py-4 sm:py-6 rounded-full font-black text-base sm:text-2xl hover:scale-105 transition shadow-[0_0_30px_rgba(163,230,53,0.6)]"
   >
     📝 Wypełnij formularz
   </a>
