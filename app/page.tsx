@@ -426,7 +426,10 @@ export default function Home() {
                 <p className="text-gray-400 text-sm leading-relaxed">
                   Od 3. treningu obowiązuje standardowy cennik.
                 </p>
-            {/* CARD 3 */}
+           
+
+              </div>
+ {/* CARD 3 */}
             <div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
 
               <div className="absolute bottom-[-100px] right-[-100px] w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full"></div>
@@ -505,9 +508,6 @@ export default function Home() {
                 <p className="text-gray-400 text-sm leading-relaxed mt-8">
                   Bonus obowiązuje dla stałych klientów po odbyciu 5 treningów.
                 </p>
-
-              </div>
-
             </div>
               </div>
 
