@@ -340,103 +340,96 @@ export default function Home() {
 
             </div>
 
-            {/* CARD 2 */}
+                       {/* CARD 2 - PROMOCJA DLA NOWYCH */}
             <div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
 
               <div className="absolute bottom-[-100px] left-[-100px] w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full"></div>
 
               <div className="relative z-10">
 
-                {/* TOP */}
-                <div className="relative h-[260px] rounded-[30px] overflow-hidden bg-gradient-to-br from-lime-400/20 via-black to-black border border-lime-400/20 flex items-center justify-center mb-12">
+                <div className="flex items-center gap-6 mb-10">
 
-                  <div className="absolute w-[350px] h-[350px] bg-lime-400/20 blur-[120px] rounded-full"></div>
-
-                  <div className="relative z-10 text-center">
-
-                    <div className="text-7xl mb-4">
-                      🏕️
-                    </div>
-
-                    <h3 className="text-3xl md:text-5xl font-black uppercase leading-none text-lime-400 break-words">
-                      Półkolonie
-                    </h3>
-
-                    <p className="text-gray-300 mt-4 uppercase tracking-[5px] text-sm">
-                      BetterOnField 2026
-                    </p>
-
+                  <div className="text-7xl">
+                    🔥
                   </div>
-
-                </div>
-
-                <p className="text-gray-200 text-lg leading-relaxed mb-10">
-
-                  Półkolonie piłkarsko-motoryczne dla dzieci i młodzieży.
-                  Treningi techniki, szybkości, podań, strzału,
-                  koordynacji i motoryki.
-
-                </p>
-
-                {/* FEATURES */}
-                <div className="space-y-4 mb-10">
-
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Treningi piłkarskie
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Treningi motoryczne
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Siatkonoga i gry sportowe
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Profesjonalna kadra
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <span className="text-lime-400">✅</span>
-                    Obiad i przekąski
-                  </div>
-
-                </div>
-
-                {/* PRICE */}
-                <div className="flex items-end justify-between">
 
                   <div>
 
-                    <p className="text-gray-400 mb-2">
-                      Cena za turnus
+                    <p className="uppercase tracking-[4px] text-lime-400 text-sm font-black">
+                      Oferta specjalna
                     </p>
 
-                    <p className="text-5xl font-black text-lime-400">
-                      1100 zł
+                    <h3 className="text-3xl md:text-5xl font-black leading-none">
+                      Promocja
+                    </h3>
+
+                    <p className="text-gray-300 text-lg mt-2 font-bold uppercase">
+                      Dla nowych zawodników
                     </p>
 
                   </div>
 
-                 <a
-  href="/polkolonie"
-  className="inline-block bg-lime-400 text-black px-8 py-4 rounded-full font-black hover:scale-105 transition shadow-[0_0_40px_rgba(163,230,53,0.8)]"
->
-  Więcej informacji
-</a>
-                  
+                </div>
+
+                <div className="rounded-2xl border border-lime-400/30 bg-black/40 p-5 text-center mb-8">
+
+                  <p className="text-lime-400 text-2xl font-black uppercase">
+                    2 pierwsze treningi
+                  </p>
+
+                  <p className="text-gray-400 mt-2">
+                    w specjalnej cenie
+                  </p>
 
                 </div>
-  
+
+                <div className="space-y-5 mb-8">
+
+                  <div className="flex justify-between items-center border-b border-lime-400/10 pb-4">
+
+                    <span className="text-xl text-gray-300">
+                      1 osoba
+                    </span>
+
+                    <span className="text-3xl font-black text-lime-400">
+                      120 zł
+                    </span>
+
+                  </div>
+
+                  <div className="flex justify-between items-center border-b border-lime-400/10 pb-4">
+
+                    <span className="text-xl text-gray-300">
+                      2 osoby
+                    </span>
+
+                    <span className="text-3xl font-black text-lime-400">
+                      100 zł / os
+                    </span>
+
+                  </div>
+
+                  <div className="flex justify-between items-center pb-2">
+
+                    <span className="text-xl text-gray-300">
+                      3–6 osób
+                    </span>
+
+                    <span className="text-3xl font-black text-lime-400">
+                      80 zł / os
+                    </span>
+
+                  </div>
+
+                </div>
+
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Od 3. treningu obowiązuje standardowy cennik.
+                </p>
+
               </div>
 
             </div>
-
           </div>
 
         </div>
