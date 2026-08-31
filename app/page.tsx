@@ -725,7 +725,7 @@ export default function Home() {
     </div>
 
     {/* CTA */}
-    <div className="mt-24 text-center">
+<div className="mt-24 text-center flex justify-center gap-4">
 
       <a
         href="https://wa.me/48535678992"
