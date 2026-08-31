@@ -229,7 +229,7 @@ export default function Home() {
           </div>
 
 {/* CARDS */}
-<div className="grid lg:grid-cols-3 gap-6 items-stretch">
+<div className="grid lg:grid-cols-4 gap-6 items-stretch">
 
   {/* CARD 1 */}
   <div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-8 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
@@ -439,7 +439,85 @@ export default function Home() {
 
     </div>
   </div>
+{/* CARD 4 - BONUS ZA POLECENIE */}
+<div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-8 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
 
+  <div className="absolute top-[-100px] right-[-100px] w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full"></div>
+
+  <div className="relative z-10">
+
+    <div className="flex items-center gap-4 mb-8">
+
+      <div className="text-6xl">
+        🤝
+      </div>
+
+      <div>
+
+        <p className="uppercase tracking-[3px] text-lime-400 text-xs font-black">
+          Poleć znajomemu
+        </p>
+
+        <h3 className="text-2xl md:text-3xl font-black leading-none">
+          Bonus
+          <br />
+          <span className="text-lime-400">
+            za polecenie
+          </span>
+        </h3>
+
+      </div>
+
+    </div>
+
+    <div className="rounded-2xl border border-lime-400/30 bg-black/40 p-6 text-center mb-8">
+
+      <p className="text-gray-300 uppercase tracking-[3px] font-bold">
+        Poleć trening
+      </p>
+
+      <p className="text-4xl font-black text-lime-400 mt-3">
+        -50 zł
+      </p>
+
+      <p className="text-gray-300 mt-3">
+        na kolejny trening
+      </p>
+
+    </div>
+
+    <div className="space-y-3">
+
+      <div className="flex items-center gap-3">
+        <span className="text-lime-400">✅</span>
+        <span className="text-gray-200">
+          Poleć nas znajomemu
+        </span>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <span className="text-lime-400">✅</span>
+        <span className="text-gray-200">
+          Znajomy zaczyna trenować
+        </span>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <span className="text-lime-400">✅</span>
+        <span className="text-gray-200">
+          Odbierz -50 zł
+        </span>
+      </div>
+
+    </div>
+
+    <p className="text-gray-400 text-sm leading-relaxed mt-6">
+      Za skuteczne polecenie nowego zawodnika otrzymujesz -50 zł na kolejny trening.
+    </p>
+
+  </div>
+
+</div>
 </div>
           </div>
 
