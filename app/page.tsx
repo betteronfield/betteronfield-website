@@ -456,7 +456,6 @@ export default function Home() {
           </div>
 
         </div>
-
       </section>
 {/* ABOUT SECTION */}
 <section
