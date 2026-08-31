@@ -736,7 +736,14 @@ export default function Home() {
         ⚽ Umów trening już dziś
 
       </a>
-
+<a
+  href="https://docs.google.com/forms/d/e/1FAIpQLSc2SUqBX-jB5XUR0vQAktioumc216KvL-7uW_mXH3FqWxZqlg/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-4 bg-lime-400 text-black px-14 py-6 rounded-full font-black text-2xl hover:scale-105 transition shadow-[0_0_80px_rgba(163,230,53,1)] mt-5"
+>
+  📋 Wypełnij formularz
+</a>
     </div>
 
   </div>
