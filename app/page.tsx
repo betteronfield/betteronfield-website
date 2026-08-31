@@ -422,7 +422,6 @@ export default function Home() {
   </div>
 
 </div>
-</a>
                   
 
                 </div>
