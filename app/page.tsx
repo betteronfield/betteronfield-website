@@ -478,7 +478,7 @@ export default function Home() {
         <div className="relative rounded-[40px] overflow-hidden border border-lime-400/20 shadow-[0_0_100px_rgba(163,230,53,0.3)]">
 
           <img
-            src="/trener.jpg"
+            src="/trener.JPG"
             alt="Michael Kukulski"
             className="w-full h-[820px] object-cover object-top"
           />
