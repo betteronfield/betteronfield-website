@@ -509,11 +509,13 @@ export default function Home() {
 
     </div>
 
-    <p className="text-gray-400 text-sm leading-relaxed mt-8">
+        <p className="text-gray-400 text-sm leading-relaxed mt-8">
       Bonus obowiązuje dla stałych klientów po odbyciu 5 treningów.
     </p>
 
   </div>
+
+</div>
 
 </div>
 {/* ABOUT SECTION */}
