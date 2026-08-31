@@ -480,7 +480,7 @@ export default function Home() {
           <img
             src="/trener.JPG"
             alt="Michael Kukulski"
-            className="w-full h-[620px] object-contain object-top"
+            className="w-full h-auto object-contain"
           />
 
         </div>
