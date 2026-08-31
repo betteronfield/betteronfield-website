@@ -340,25 +340,18 @@ export default function Home() {
 
             </div>
 
-            {/* CARD 2 */}
-            <div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
+        {/* CARD 2 - PROMOCJA */}
+<div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
 
-              <div className="absolute bottom-[-100px] left-[-100px] w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full"></div>
-
-              <div className="relative z-10">
-
-                {/* PROMOCJA DLA NOWYCH */}
-<div className="relative rounded-[30px] overflow-hidden bg-gradient-to-br from-lime-400/20 via-black to-black border border-lime-400/20 p-8 md:p-10">
-
-  <div className="absolute w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full -top-20 -right-20"></div>
+  <div className="absolute bottom-[-100px] left-[-100px] w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full"></div>
 
   <div className="relative z-10">
 
-    <div className="text-5xl mb-4">
+    <div className="text-5xl mb-6">
       ⭐
     </div>
 
-    <h3 className="text-3xl md:text-4xl font-black uppercase leading-none text-lime-400">
+    <h3 className="text-3xl md:text-4xl font-black uppercase text-lime-400">
       Promocja
     </h3>
 
@@ -366,27 +359,27 @@ export default function Home() {
       Dla nowych zawodników
     </p>
 
-    <div className="mt-8 mb-6 rounded-2xl border border-lime-400/30 bg-black/40 p-5 text-center">
+    <div className="mt-8 rounded-2xl border border-lime-400/30 bg-black/40 p-5 text-center">
       <p className="text-lime-400 text-xl font-black uppercase">
         2 pierwsze treningi
       </p>
     </div>
 
-    <div className="space-y-4">
+    <div className="space-y-5 mt-8">
 
-      <div className="flex items-center justify-between border-b border-white/10 pb-3">
-        <span>1 osoba</span>
-        <span className="text-lime-400 font-black">120 zł</span>
+      <div className="flex items-center justify-between border-b border-white/10 pb-4">
+        <span className="text-gray-200">1 osoba</span>
+        <span className="text-lime-400 font-black text-xl">120 zł</span>
       </div>
 
-      <div className="flex items-center justify-between border-b border-white/10 pb-3">
-        <span>2 osoby</span>
-        <span className="text-lime-400 font-black">100 zł / os.</span>
+      <div className="flex items-center justify-between border-b border-white/10 pb-4">
+        <span className="text-gray-200">2 osoby</span>
+        <span className="text-lime-400 font-black text-xl">100 zł / os.</span>
       </div>
 
-      <div className="flex items-center justify-between border-b border-white/10 pb-3">
-        <span>3–6 osób</span>
-        <span className="text-lime-400 font-black">80 zł / os.</span>
+      <div className="flex items-center justify-between border-b border-white/10 pb-4">
+        <span className="text-gray-200">3–6 osób</span>
+        <span className="text-lime-400 font-black text-xl">80 zł / os.</span>
       </div>
 
     </div>
@@ -400,18 +393,18 @@ export default function Home() {
 </div>
 
 
-{/* BONUS ZA REGULARNOŚĆ */}
-<div className="relative rounded-[30px] overflow-hidden bg-gradient-to-br from-lime-400/20 via-black to-black border border-lime-400/20 p-8 md:p-10">
+{/* CARD 3 - BONUS */}
+<div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
 
-  <div className="absolute w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full -bottom-20 -right-20"></div>
+  <div className="absolute bottom-[-100px] right-[-100px] w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full"></div>
 
   <div className="relative z-10">
 
-    <div className="text-5xl mb-4">
+    <div className="text-5xl mb-6">
       🏆
     </div>
 
-    <h3 className="text-3xl md:text-4xl font-black uppercase leading-none text-lime-400">
+    <h3 className="text-3xl md:text-4xl font-black uppercase text-lime-400">
       Bonus
     </h3>
 
@@ -437,6 +430,7 @@ export default function Home() {
 
     <div className="mt-8 flex items-center gap-3">
       <span className="text-2xl">💚</span>
+
       <p className="text-gray-300 font-semibold">
         Trenuj regularnie. Zyskuj więcej.
       </p>
@@ -445,18 +439,6 @@ export default function Home() {
   </div>
 
 </div>
-                  
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>
 {/* ABOUT SECTION */}
 <section
   id="omnie"
