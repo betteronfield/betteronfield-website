@@ -229,7 +229,7 @@ export default function Home() {
           </div>
 
           {/* CARDS */}
-          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+          <div className="grid lg:grid-cols-3 gap-12 items-stretch">
 
             {/* CARD 1 */}
             <div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
@@ -517,7 +517,6 @@ export default function Home() {
 
 </div>
 
-</div>
 {/* ABOUT SECTION */}
 <section
   id="omnie"
