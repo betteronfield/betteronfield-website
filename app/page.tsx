@@ -229,7 +229,7 @@ export default function Home() {
           </div>
 
           {/* CARDS */}
-          <div className="grid lg:grid-cols-3 gap-12 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
 
             {/* CARD 1 */}
             <div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
@@ -340,183 +340,108 @@ export default function Home() {
 
             </div>
 
-       {/* CARD 2 */}
-<div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
+            {/* CARD 2 */}
+            <div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
 
-  <div className="absolute bottom-[-100px] left-[-100px] w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-[-100px] left-[-100px] w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full"></div>
 
-  <div className="relative z-10">
+              <div className="relative z-10">
 
-    <div className="flex items-center gap-6 mb-10">
+                {/* TOP */}
+                <div className="relative h-[260px] rounded-[30px] overflow-hidden bg-gradient-to-br from-lime-400/20 via-black to-black border border-lime-400/20 flex items-center justify-center mb-12">
 
-      <div className="text-7xl">
-        🔥
-      </div>
+                  <div className="absolute w-[350px] h-[350px] bg-lime-400/20 blur-[120px] rounded-full"></div>
 
-      <div>
+                  <div className="relative z-10 text-center">
 
-        <p className="uppercase tracking-[4px] text-lime-400 text-sm font-black">
-          Oferta specjalna
-        </p>
+                    <div className="text-7xl mb-4">
+                      🏕️
+                    </div>
 
-        <h3 className="text-3xl md:text-5xl font-black leading-none">
-          Promocja
-        </h3>
+                    <h3 className="text-3xl md:text-5xl font-black uppercase leading-none text-lime-400 break-words">
+                      Półkolonie
+                    </h3>
 
-        <p className="text-gray-300 text-lg mt-2 font-bold uppercase">
-          Dla nowych zawodników
-        </p>
+                    <p className="text-gray-300 mt-4 uppercase tracking-[5px] text-sm">
+                      BetterOnField 2026
+                    </p>
 
-      </div>
+                  </div>
 
-    </div>
+                </div>
 
-    <div className="rounded-2xl border border-lime-400/30 bg-black/40 p-5 text-center mb-8">
+                <p className="text-gray-200 text-lg leading-relaxed mb-10">
 
-      <p className="text-lime-400 text-2xl font-black uppercase">
-        2 pierwsze treningi
-      </p>
+                  Półkolonie piłkarsko-motoryczne dla dzieci i młodzieży.
+                  Treningi techniki, szybkości, podań, strzału,
+                  koordynacji i motoryki.
 
-      <p className="text-gray-400 mt-2">
-        w specjalnej cenie
-      </p>
+                </p>
 
-    </div>
+                {/* FEATURES */}
+                <div className="space-y-4 mb-10">
 
-    {/* PROMO PRICES */}
-    <div className="space-y-5 mb-8">
+                  <div className="flex items-center gap-4">
+                    <span className="text-lime-400">✅</span>
+                    Treningi piłkarskie
+                  </div>
 
-      <div className="flex justify-between items-center border-b border-lime-400/10 pb-4">
+                  <div className="flex items-center gap-4">
+                    <span className="text-lime-400">✅</span>
+                    Treningi motoryczne
+                  </div>
 
-        <span className="text-xl text-gray-300">
-          1 osoba
-        </span>
+                  <div className="flex items-center gap-4">
+                    <span className="text-lime-400">✅</span>
+                    Siatkonoga i gry sportowe
+                  </div>
 
-        <span className="text-3xl font-black text-lime-400">
-          120 zł
-        </span>
+                  <div className="flex items-center gap-4">
+                    <span className="text-lime-400">✅</span>
+                    Profesjonalna kadra
+                  </div>
 
-      </div>
+                  <div className="flex items-center gap-4">
+                    <span className="text-lime-400">✅</span>
+                    Obiad i przekąski
+                  </div>
 
-      <div className="flex justify-between items-center border-b border-lime-400/10 pb-4">
+                </div>
 
-        <span className="text-xl text-gray-300">
-          2 osoby
-        </span>
+                {/* PRICE */}
+                <div className="flex items-end justify-between">
 
-        <span className="text-3xl font-black text-lime-400">
-          100 zł / os
-        </span>
+                  <div>
 
-      </div>
+                    <p className="text-gray-400 mb-2">
+                      Cena za turnus
+                    </p>
 
-      <div className="flex justify-between items-center pb-2">
+                    <p className="text-5xl font-black text-lime-400">
+                      1100 zł
+                    </p>
 
-        <span className="text-xl text-gray-300">
-          3–6 osób
-        </span>
+                  </div>
 
-        <span className="text-3xl font-black text-lime-400">
-          80 zł / os
-        </span>
+                 <a
+  href="/polkolonie"
+  className="inline-block bg-lime-400 text-black px-8 py-4 rounded-full font-black hover:scale-105 transition shadow-[0_0_40px_rgba(163,230,53,0.8)]"
+>
+  Więcej informacji
+</a>
+                  
 
-      </div>
+                </div>
 
-    </div>
+              </div>
 
-    <p className="text-gray-400 text-sm leading-relaxed">
-      Od 3. treningu obowiązuje standardowy cennik.
-    </p>
+            </div>
 
-  </div>
+          </div>
 
-</div>
+        </div>
 
-
-{/* CARD 3 - BONUS ZA REGULARNOŚĆ */}
-<div className="relative bg-[#0c0c0c]/95 border border-lime-400/30 rounded-[40px] p-12 overflow-hidden hover:border-lime-400 transition duration-500 hover:shadow-[0_0_80px_rgba(163,230,53,0.25)]">
-
-  <div className="absolute bottom-[-100px] right-[-100px] w-[300px] h-[300px] bg-lime-400/20 blur-[120px] rounded-full"></div>
-
-  <div className="relative z-10">
-
-    <div className="flex items-center gap-6 mb-10">
-
-      <div className="text-7xl">
-        🏆
-      </div>
-
-      <div>
-
-        <p className="uppercase tracking-[4px] text-lime-400 text-sm font-black">
-          Dla stałych klientów
-        </p>
-
-        <h3 className="text-3xl md:text-5xl font-black leading-none">
-          Bonus
-          <br />
-          <span className="text-lime-400">
-            za regularność
-          </span>
-        </h3>
-
-      </div>
-
-    </div>
-
-    <div className="rounded-2xl border border-lime-400/30 bg-black/40 p-8 text-center mb-8">
-
-      <p className="text-gray-300 text-lg uppercase tracking-[3px] font-bold">
-        Po
-      </p>
-
-      <p className="text-5xl font-black text-lime-400 mt-2">
-        5 TRENINGACH
-      </p>
-
-      <p className="text-3xl font-black text-white mt-3">
-        -50 zł
-      </p>
-
-      <p className="text-gray-300 mt-3">
-        na kolejny trening
-      </p>
-
-    </div>
-
-    <div className="space-y-4">
-
-      <div className="flex items-center gap-4">
-        <span className="text-lime-400 text-xl">✅</span>
-        <span className="text-gray-200">
-          Trenuj regularnie
-        </span>
-      </div>
-
-      <div className="flex items-center gap-4">
-        <span className="text-lime-400 text-xl">✅</span>
-        <span className="text-gray-200">
-          Zbieraj treningi
-        </span>
-      </div>
-
-      <div className="flex items-center gap-4">
-        <span className="text-lime-400 text-xl">✅</span>
-        <span className="text-gray-200">
-          Odbierz -50 zł
-        </span>
-      </div>
-
-    </div>
-
-        <p className="text-gray-400 text-sm leading-relaxed mt-8">
-      Bonus obowiązuje dla stałych klientów po odbyciu 5 treningów.
-    </p>
-
-  </div>
-
-</div>
-
+      </section>
 {/* ABOUT SECTION */}
 <section
   id="omnie"
@@ -828,4 +753,3 @@ export default function Home() {
 </main>
   );
 }
-^
