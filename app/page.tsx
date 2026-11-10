@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-   <main className="min-h-screen overflow-x-hidden bg-[#050805] text-white">
+  <main className="relative min-h-screen overflow-x-hidden bg-[#050805] text-white">
 {/* WSPÓLNE TŁO CAŁEJ STRONY */}
 <div
   className="fixed inset-0 pointer-events-none z-0"
