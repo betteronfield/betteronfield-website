@@ -14,7 +14,7 @@ export default function Home() {
 />
      <div className="relative z-10">
       {/* HERO */}
-      <section className="relative min-h-[100svh] overflow-hidden bg-gradient-to-b from-black via-[#071107] to-black">
+      <section className="relative min-h-[100svh] overflow-hidden">
 
         {/* GLOWS */}
         <div className="absolute top-[-400px] left-[-300px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[250px] rounded-full"></div>
