@@ -142,7 +142,7 @@ export default function PreWinterCampPage() {
       {/* DETAILS – WINTER EDITION */}
       <section className="relative px-5 sm:px-6 md:px-16 py-20 overflow-hidden">
 
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-lime-400/10 blur-[150px] rounded-full pointer-events-none" />
+      
 
         <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
 
@@ -182,9 +182,7 @@ export default function PreWinterCampPage() {
       {/* ATTRACTIONS – WINTER EDITION */}
       <section className="relative px-5 sm:px-6 md:px-16 py-24 overflow-hidden">
 
-        <div className="absolute top-0 left-[-150px] w-[450px] h-[450px] bg-lime-400/10 blur-[150px] rounded-full pointer-events-none" />
-        <div className="absolute bottom-0 right-[-150px] w-[450px] h-[450px] bg-emerald-400/10 blur-[150px] rounded-full pointer-events-none" />
-
+       
         <div className="relative z-10 max-w-6xl mx-auto">
 
           <div className="text-center mb-16">
@@ -201,7 +199,7 @@ export default function PreWinterCampPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
 
-            <div className="group relative rounded-3xl overflow-hidden border border-lime-400/20 bg-[#0b100b] p-8 md:p-10 transition-all duration-500 hover:border-lime-400/70 hover:shadow-[0_0_45px_rgba(163,230,53,0.15)] hover:-translate-y-2">
+            <div className="group relative rounded-3xl overflow-hidden border border-lime-400/20 bg-[#0b100b]/90 backdrop-blur-md p-8 md:p-10 transition-all duration-500 hover:border-lime-400/70 hover:shadow-[0_0_45px_rgba(163,230,53,0.15)] hover:-translate-y-2">
 
               <div className="absolute top-0 right-0 w-48 h-48 bg-lime-400/10 blur-[70px] rounded-full group-hover:bg-lime-400/20 transition" />
 
@@ -231,7 +229,7 @@ export default function PreWinterCampPage() {
               </div>
             </div>
 
-            <div className="group relative rounded-3xl overflow-hidden border border-lime-400/20 bg-[#0b100b] p-8 md:p-10 transition-all duration-500 hover:border-lime-400/70 hover:shadow-[0_0_45px_rgba(163,230,53,0.15)] hover:-translate-y-2">
+            <div className="group relative rounded-3xl overflow-hidden border border-lime-400/20 bg-[#0b100b]/90 backdrop-blur-md p-8 md:p-10 transition-all duration-500 hover:border-lime-400/70 hover:shadow-[0_0_45px_rgba(163,230,53,0.15)] hover:-translate-y-2">
 
               <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-400/10 blur-[70px] rounded-full group-hover:bg-lime-400/20 transition" />
 
@@ -311,7 +309,7 @@ export default function PreWinterCampPage() {
             obiad, przekąski i napoje.
           </p>
 
-          <div className="bg-[#0d0d0d] border border-lime-400/20 rounded-3xl p-8 text-left space-y-4 mb-10">
+         <div className="bg-[#0b100b]/90 backdrop-blur-md border border-lime-400/20 rounded-3xl p-8 text-left space-y-4 mb-10">
             <div className="flex justify-between gap-4">
               <span className="text-gray-300">Zaliczka rezerwacyjna</span>
               <strong className="text-lime-400">150 zł</strong>
@@ -342,7 +340,7 @@ export default function PreWinterCampPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-lime-400/10 py-10 px-5 text-center">
+     <footer className="py-10 px-5 text-center">
         <p className="font-black text-2xl uppercase">
           Better<span className="text-lime-400">OnField</span>
         </p>
