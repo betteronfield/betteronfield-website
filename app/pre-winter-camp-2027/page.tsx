@@ -2,18 +2,67 @@
 export default function PreWinterCampPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-black via-[#081208] to-black text-white overflow-hidden">
-      {/* HERO */}
-      <section className="relative py-24 md:py-36 px-5 sm:px-6 md:px-16 overflow-hidden">
-        <div className="absolute top-[-250px] left-[-200px] w-[800px] h-[800px] bg-lime-400/20 blur-[200px] rounded-full" />
-        <div className="absolute bottom-[-250px] right-[-200px] w-[800px] h-[800px] bg-lime-400/20 blur-[200px] rounded-full" />
+      
+      {/* HERO – WINTER EDITION */}
+      <section className="relative py-24 md:py-36 px-5 sm:px-6 md:px-16 overflow-hidden bg-gradient-to-b from-[#07100a] via-[#050805] to-black">
 
+        <style>{`
+          @keyframes bof-snow {
+            0% { transform: translate3d(0,-10vh,0); opacity: 0; }
+            15% { opacity: .8; }
+            85% { opacity: .7; }
+            100% { transform: translate3d(35px,110vh,0); opacity: 0; }
+          }
+          .bof-snow {
+            position: absolute;
+            top: -20px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #d9f99d;
+            box-shadow: 0 0 10px rgba(163,230,53,.8);
+            animation: bof-snow linear infinite;
+          }
+        `}</style>
+
+        {/* ZIMOWE ŚWIATŁA */}
+        <div className="absolute top-[-250px] left-[-200px] w-[700px] h-[700px] bg-lime-400/15 blur-[180px] rounded-full" />
+        <div className="absolute bottom-[-250px] right-[-200px] w-[700px] h-[700px] bg-emerald-500/10 blur-[180px] rounded-full" />
+
+        {/* ŚNIEG */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+          {Array.from({ length: 35 }).map((_, i) => (
+            <span
+              key={i}
+              className="bof-snow"
+              style={{
+                left: `${(i * 37) % 100}%`,
+                animationDelay: `${(i % 9) * -1.7}s`,
+                animationDuration: `${9 + (i % 7) * 2}s`,
+                width: `${3 + (i % 3) * 2}px`,
+                height: `${3 + (i % 3) * 2}px`,
+              }}
+            />
+          ))}
+        </div>
+
+        {/* TREŚĆ HERO */}
         <div className="relative z-10 max-w-6xl mx-auto text-center">
+
           <a href="/" className="text-gray-400 hover:text-lime-400 transition">
             ← Powrót na stronę główną
           </a>
 
-          <p className="text-lime-400 uppercase tracking-[6px] font-black mt-14 mb-6">
-            BetterOnField • Zima 2027
+          <div className="mt-14 mb-6 flex items-center justify-center gap-3">
+            <span className="text-lime-400 text-xl">✦</span>
+            <p className="text-lime-400 uppercase tracking-[6px] font-black">
+              BetterOnField • Winter Edition 2027
+            </p>
+            <span className="text-lime-400 text-xl">✦</span>
+          </div>
+
+          <p className="text-gray-400 uppercase tracking-[5px] text-xs sm:text-sm font-bold mb-5">
+            Zimowa przygoda zaczyna się tutaj
           </p>
 
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-black uppercase leading-[0.95]">
@@ -24,19 +73,21 @@ export default function PreWinterCampPage() {
             </span>
           </h1>
 
-          <p className="mt-8 text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-lime-400 mx-auto mt-8 rounded-full shadow-[0_0_20px_rgba(163,230,53,0.8)]" />
+
+          <p className="mt-8 text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Dwa dni pełne piłki nożnej, aktywności i zimowych atrakcji.
             Sport, ruch i świetna zabawa z BetterOnField!
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-10">
-            <span className="border border-lime-400/30 bg-lime-400/10 rounded-full px-6 py-3 font-bold">
+            <span className="border border-lime-400/30 bg-lime-400/10 backdrop-blur-sm rounded-full px-6 py-3 font-bold shadow-[0_0_20px_rgba(163,230,53,0.08)]">
               📅 4–5 stycznia 2027
             </span>
-            <span className="border border-lime-400/30 bg-lime-400/10 rounded-full px-6 py-3 font-bold">
+            <span className="border border-lime-400/30 bg-lime-400/10 backdrop-blur-sm rounded-full px-6 py-3 font-bold shadow-[0_0_20px_rgba(163,230,53,0.08)]">
               🕘 9:00–16:00
             </span>
-            <span className="border border-lime-400/30 bg-lime-400/10 rounded-full px-6 py-3 font-bold">
+            <span className="border border-lime-400/30 bg-lime-400/10 backdrop-blur-sm rounded-full px-6 py-3 font-bold shadow-[0_0_20px_rgba(163,230,53,0.08)]">
               👥 Maks. 16 dzieci
             </span>
           </div>
@@ -49,8 +100,13 @@ export default function PreWinterCampPage() {
           >
             ⚽ ZAPISZ DZIECKO
           </a>
+
+          <p className="text-gray-500 text-xs uppercase tracking-[3px] mt-8">
+            BetterOnField • Football • Performance • Development
+          </p>
         </div>
       </section>
+
 
       {/* DETAILS */}
       <section className="px-5 sm:px-6 md:px-16 py-16">
