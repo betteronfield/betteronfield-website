@@ -44,45 +44,75 @@ export default function Home() {
 
           </div>
 
-          {/* MENU */}
-          <nav className="hidden lg:flex gap-10 uppercase text-sm font-bold">
+       
+{/* MENU */}
+<nav className="hidden lg:flex items-center gap-10 uppercase text-sm font-bold">
 
-            <a
-              href="#"
-              className="text-lime-400 border-b border-lime-400 pb-2"
-            >
-              Strona główna
-            </a>
+  <a
+    href="/"
+    className="text-lime-400 border-b border-lime-400 pb-2"
+  >
+    Strona główna
+  </a>
 
-            <a
-              href="#oferta"
-              className="hover:text-lime-400 transition"
-            >
-              Oferta
-            </a>
+  <a href="#oferta" className="hover:text-lime-400 transition">
+    Oferta
+  </a>
 
-            <a
-              href="#omnie"
-              className="hover:text-lime-400 transition"
-            >
-              O mnie
-            </a>
+  <a href="#omnie" className="hover:text-lime-400 transition">
+    O mnie
+  </a>
 
-            <a
-              href="/polkolonie"
-              className="hover:text-lime-400 transition"
-            >
-              Półkolonie
-            </a>
+  {/* ROZWIJANE MENU OBOZY */}
+  <div className="relative group py-3">
 
-            <a
-              href="#kontakt"
-              className="hover:text-lime-400 transition"
-            >
-              Kontakt
-            </a>
+    <button
+      type="button"
+      className="flex items-center gap-2 hover:text-lime-400 transition"
+    >
+      Obozy i półkolonie
+      <span className="text-lime-400 transition-transform duration-300 group-hover:rotate-180">
+        ▼
+      </span>
+    </button>
 
-          </nav>
+    <div className="absolute left-0 top-full pt-3 w-72 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
+
+      <div className="bg-[#080d09] border border-lime-400/30 rounded-2xl p-3 shadow-[0_0_35px_rgba(163,230,53,0.15)]">
+
+        <a
+          href="/pre-winter-camp-2027"
+          className="block rounded-xl px-4 py-4 hover:bg-lime-400/10 hover:text-lime-400 transition"
+        >
+          <span className="block text-lime-400 text-xs mb-1">❄️ WINTER EDITION</span>
+          PRE-WINTER CAMP 2027
+        </a>
+
+        <a
+          href="/winter-camp-2027"
+          className="block rounded-xl px-4 py-4 hover:bg-lime-400/10 hover:text-lime-400 transition"
+        >
+          <span className="block text-lime-400 text-xs mb-1">❄️ WINTER EDITION</span>
+          WINTER CAMP 2027
+        </a>
+
+        <a
+          href="/summer-camp-2026"
+          className="block rounded-xl px-4 py-4 hover:bg-lime-400/10 hover:text-lime-400 transition"
+        >
+          <span className="block text-gray-400 text-xs mb-1">☀️ ARCHIWUM</span>
+          LETNIE PÓŁKOLONIE 2026
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <a href="#kontakt" className="hover:text-lime-400 transition">
+    Kontakt
+  </a>
+
+</nav>
 
           {/* BUTTON */}
           
