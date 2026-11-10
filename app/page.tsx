@@ -1,7 +1,18 @@
 export default function Home() {
   return (
    <main className="min-h-screen overflow-x-hidden bg-[#050805] text-white">
-
+{/* WSPÓLNE TŁO CAŁEJ STRONY */}
+<div
+  className="fixed inset-0 pointer-events-none z-0"
+  style={{
+    background: `
+      radial-gradient(ellipse at 15% 15%, rgba(101,163,13,.10), transparent 40%),
+      radial-gradient(ellipse at 85% 55%, rgba(16,185,129,.07), transparent 45%),
+      #050805
+    `,
+  }}
+/>
+     <div className="relative z-10">
       {/* HERO */}
       <section className="relative min-h-[100svh] overflow-hidden bg-gradient-to-b from-black via-[#071107] to-black">
 
@@ -910,6 +921,5 @@ export default function Home() {
   </div>
 
 </section>
+</div>
 </main>
-  );
-}
