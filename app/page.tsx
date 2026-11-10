@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* OFFER SECTION */}
- <section id="oferta" className="relative py-40 px-6 md:px-16 overflow-hidden bg-transparent">
+ <section id="oferta" className="relative -mt-20 pt-40 pb-40 px-6 md:px-16 overflow-hidden bg-transparent">
 
      
         <div className="relative z-10 max-w-7xl mx-auto">
