@@ -118,77 +118,36 @@ export default function PreWinterCampPage() {
         </div>
       </section>
 
-      {/* DAILY SCHEDULE */}
+     
+      {/* PLAN ZAJĘĆ – GRAFIKA */}
       <section className="px-5 sm:px-6 md:px-16 py-20">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
             <p className="text-lime-400 uppercase tracking-[5px] font-black mb-4">
               Organizacja
             </p>
             <h2 className="text-4xl md:text-6xl font-black uppercase">
-              Plan dnia
+              Plan <span className="text-lime-400">campu</span>
             </h2>
+            <p className="text-gray-400 mt-5 text-base md:text-lg">
+              Szczegółowy harmonogram dwóch dni Pre-Winter Camp 2027.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                day: "DZIEŃ 1 • 4 STYCZNIA",
-                items: [
-                  ["9:00", "Zbiórka"],
-                  ["9:15–10:45", "Trening piłkarski"],
-                  ["10:45–11:15", "Przekąska i odpoczynek"],
-                  ["11:15–12:00", "Przejazd do Hangar 646"],
-                  ["12:00–13:30", "Atrakcja – trampoliny"],
-                  ["13:30–14:00", "Obiad"],
-                  ["14:00–14:45", "Powrót"],
-                  ["14:45–16:00", "Winter Football Fun"],
-                ],
-              },
-              {
-                day: "DZIEŃ 2 • 5 STYCZNIA",
-                items: [
-                  ["9:00", "Zbiórka"],
-                  ["9:15–10:45", "Trening piłkarski"],
-                  ["10:45–11:15", "Przekąska i odpoczynek"],
-                  ["11:15–12:15", "Przejazd do Fortu Żerań"],
-                  ["12:15–12:45", "Obiad"],
-                  ["12:45–14:15", "Atrakcja – Laser Tag"],
-                  ["14:15–15:15", "Powrót"],
-                  ["15:15–16:00", "Zakończenie campu"],
-                ],
-              },
-            ].map((day) => (
-              <div
-                key={day.day}
-                className="bg-[#0d0d0d] border border-lime-400/20 rounded-3xl p-6 md:p-8"
-              >
-                <h3 className="text-lime-400 font-black mb-6">
-                  {day.day}
-                </h3>
-                <div className="space-y-4">
-                  {day.items.map(([time, activity]) => (
-                    <div
-                      key={time}
-                      className="flex gap-4 border-b border-white/10 pb-3"
-                    >
-                      <span className="text-lime-400 font-bold min-w-[105px]">
-                        {time}
-                      </span>
-                      <span className="text-gray-300">{activity}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className="rounded-3xl overflow-hidden border border-lime-400/20 shadow-[0_0_60px_rgba(163,230,53,0.12)] bg-[#0d0d0d]">
+            <img
+              src="/Szczeg%C3%B3%C5%82owy%20plan%20campu%20sportowego%202027.png"
+              alt="Szczegółowy plan zajęć Pre-Winter Camp 2027"
+              className="w-full h-auto object-contain"
+            />
           </div>
 
-          <p className="text-gray-500 text-sm text-center mt-8">
-            Plan ma charakter ramowy. Godziny atrakcji i przejazdów
-            mogą ulec zmianie.
+          <p className="text-gray-500 text-sm text-center mt-6">
+            Harmonogram może ulec niewielkim zmianom organizacyjnym.
           </p>
         </div>
       </section>
+
 
       {/* PAYMENT */}
       <section className="px-5 sm:px-6 md:px-16 py-20 bg-[#050805]">
