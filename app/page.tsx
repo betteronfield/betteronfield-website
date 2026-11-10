@@ -183,9 +183,7 @@ export default function Home() {
   "
 >
 
-  {/* GLOW */}
-  <div className="absolute w-[700px] h-[700px] lg:w-[1700px] lg:h-[1700px] bg-lime-400/30 rounded-full blur-[180px] lg:blur-[250px]"></div>
-
+ 
   {/* PLAYER */}
   <img
     src="/player.png"
