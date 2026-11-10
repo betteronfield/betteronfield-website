@@ -108,9 +108,14 @@ export default function PreWinterCampPage() {
       </section>
 
 
-      {/* DETAILS */}
-      <section className="px-5 sm:px-6 md:px-16 py-16">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+     
+      {/* DETAILS – WINTER EDITION */}
+      <section className="relative px-5 sm:px-6 md:px-16 py-20 bg-gradient-to-b from-black via-[#081208] to-[#050805] overflow-hidden">
+
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-lime-400/10 blur-[150px] rounded-full pointer-events-none" />
+
+        <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+
           {[
             ["📍", "Miejsce zbiórki", "CRS Syrenka – Park Olszyna, Warszawa"],
             ["💰", "Cena", "499 zł za dwa dni"],
@@ -118,15 +123,28 @@ export default function PreWinterCampPage() {
           ].map(([icon, title, description]) => (
             <div
               key={title}
-              className="bg-[#0d0d0d] border border-lime-400/20 rounded-3xl p-8 text-center"
+              className="group relative bg-[#0b100b]/90 backdrop-blur-md border border-lime-400/25 rounded-3xl p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:border-lime-400/70 hover:shadow-[0_0_40px_rgba(163,230,53,0.15)] overflow-hidden"
             >
-              <div className="text-4xl mb-4">{icon}</div>
-              <h2 className="text-xl font-black text-lime-400 uppercase mb-3">
-                {title}
-              </h2>
-              <p className="text-gray-300">{description}</p>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-lime-400/10 blur-[55px] rounded-full opacity-60 group-hover:opacity-100 transition" />
+
+              <div className="relative z-10">
+                <div className="text-4xl mb-5 group-hover:scale-110 transition duration-300">
+                  {icon}
+                </div>
+
+                <h2 className="text-lg md:text-xl font-black text-lime-400 uppercase mb-4 tracking-wide">
+                  {title}
+                </h2>
+
+                <div className="w-12 h-1 bg-lime-400/70 rounded-full mx-auto mb-5 group-hover:w-20 transition-all duration-300" />
+
+                <p className="text-gray-300 leading-relaxed">
+                  {description}
+                </p>
+              </div>
             </div>
           ))}
+
         </div>
       </section>
 
