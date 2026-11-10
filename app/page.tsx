@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-gradient-to-b from-black via-[#081208] to-black text-white">
+   <main className="min-h-screen overflow-x-hidden bg-[#050805] text-white">
 
       {/* HERO */}
       <section className="relative min-h-[100svh] overflow-hidden bg-gradient-to-b from-black via-[#071107] to-black">
@@ -213,10 +213,7 @@ export default function Home() {
       </section>
 
       {/* OFFER SECTION */}
-      <section
-        id="oferta"
-        className="relative py-40 px-6 md:px-16 overflow-hidden bg-[#050505]"
-      >
+    <section id="oferta" className="relative py-40 px-6 md:px-16 overflow-hidden">
 
         {/* BACKGROUND GLOWS */}
         <div className="absolute top-[-400px] left-[-300px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[220px] rounded-full"></div>
@@ -612,10 +609,7 @@ export default function Home() {
 
       </section>
 {/* ABOUT SECTION */}
-<section
-  id="omnie"
-  className="relative py-40 px-6 md:px-16 overflow-hidden bg-[#070707]"
->
+<section id="omnie" className="relative py-40 px-6 md:px-16 overflow-hidden">
 
   {/* GLOW BACKGROUNDS */}
   <div className="absolute top-[-300px] left-[-200px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[220px] rounded-full"></div>
@@ -757,10 +751,7 @@ export default function Home() {
 
 </section>
 {/* CONTACT SECTION */}
-<section
-  id="kontakt"
-  className="relative py-40 px-6 md:px-16 overflow-hidden bg-black"
->
+<section id="kontakt" className="relative py-40 px-6 md:px-16 overflow-hidden">
 
   {/* GLOWS */}
   <div className="absolute top-[-300px] left-[-300px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[220px] rounded-full"></div>
