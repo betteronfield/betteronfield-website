@@ -329,6 +329,22 @@ export default function PreWinterCampPage() {
             className="inline-flex bg-lime-400 text-black px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition"
           >
             📝 FORMULARZ ZGŁOSZENIOWY
+         {/* BONUS ZA POLECENIE */}
+<div className="mt-8 mb-8 rounded-2xl border border-lime-400/40 bg-lime-400/5 p-5 text-center shadow-[0_0_30px_rgba(163,230,53,0.08)]">
+
+  <p className="text-lime-400 font-black uppercase tracking-wider text-sm">
+    🤝 Poleć i zyskaj!
+  </p>
+
+  <p className="text-4xl font-black text-lime-400 my-2">
+    -50 zł
+  </p>
+
+  <p className="text-gray-200 text-sm">
+    Znajomy zapisuje się na camp? Ty otrzymujesz 50 zł rabatu!
+  </p>
+
+</div>
           </a>
 
           <p className="text-gray-500 text-sm mt-8">
