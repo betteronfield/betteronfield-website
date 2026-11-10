@@ -16,15 +16,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative min-h-[100svh] overflow-hidden">
 
-        {/* GLOWS */}
-        <div className="absolute top-[-400px] left-[-300px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[250px] rounded-full"></div>
-
-        <div className="absolute bottom-[-400px] right-[-300px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[250px] rounded-full"></div>
-
-        {/* SHAPES */}
-        <div className="absolute left-[-250px] top-[200px] w-[600px] h-[600px] border border-lime-400/40 rotate-45 shadow-[0_0_120px_rgba(163,230,53,0.8)]"></div>
-
-        <div className="absolute right-[-250px] top-[200px] w-[600px] h-[600px] border border-lime-400/40 rotate-45 shadow-[0_0_120px_rgba(163,230,53,0.8)]"></div>
+       
 {/* NAVBAR */}
 <header className="relative z-50 flex items-center justify-between px-5 sm:px-6 md:px-16 py-5 md:py-6">
 
