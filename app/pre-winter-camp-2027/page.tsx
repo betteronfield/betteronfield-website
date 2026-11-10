@@ -68,7 +68,7 @@ export default function PreWinterCampPage() {
       {/* HERO – WINTER EDITION */}
      <section className="relative py-24 md:py-36 px-5 sm:px-6 md:px-16 overflow-hidden">
        
-        `}</style>
+      
 
         {/* ZIMOWE ŚWIATŁA */}
         <div className="absolute top-[-250px] left-[-200px] w-[700px] h-[700px] bg-lime-400/15 blur-[180px] rounded-full" />
@@ -357,7 +357,8 @@ export default function PreWinterCampPage() {
         >
           Kontakt przez WhatsApp
         </a>
-      </footer>
+          </footer>
+      </div>
     </main>
   );
 }
