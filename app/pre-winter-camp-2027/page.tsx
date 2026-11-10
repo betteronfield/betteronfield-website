@@ -1,8 +1,70 @@
 
+
 export default function PreWinterCampPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-[#081208] to-black text-white overflow-hidden">
-      
+    <main className="relative min-h-screen bg-[#050805] text-white overflow-hidden">
+
+      <style>{`
+        @keyframes bof-snow {
+          0% {
+            transform: translate3d(0,-10vh,0);
+            opacity: 0;
+          }
+          15% { opacity: .75; }
+          85% { opacity: .65; }
+          100% {
+            transform: translate3d(35px,110vh,0);
+            opacity: 0;
+          }
+        }
+
+        .bof-snow {
+          position: absolute;
+          top: -20px;
+          border-radius: 50%;
+          background: #d9f99d;
+          box-shadow: 0 0 10px rgba(163,230,53,.65);
+          animation: bof-snow linear infinite;
+        }
+
+        .bof-winter-background {
+          background:
+            radial-gradient(ellipse at 15% 15%, rgba(101,163,13,.10), transparent 40%),
+            radial-gradient(ellipse at 85% 55%, rgba(16,185,129,.07), transparent 45%),
+            #050805;
+        }
+      `}</style>
+
+      {/* WSPÓLNE ZIMOWE TŁO */}
+      <div
+        className="bof-winter-background fixed inset-0 pointer-events-none z-0"
+        aria-hidden="true"
+      />
+
+      {/* ŚNIEG NA CAŁEJ STRONIE */}
+      <div
+        className="fixed inset-0 pointer-events-none overflow-hidden z-50"
+        aria-hidden="true"
+      >
+        {Array.from({ length: 45 }).map((_, i) => (
+          <span
+            key={i}
+            className="bof-snow"
+            style={{
+              left: `${(i * 37) % 100}%`,
+              animationDelay: `${(i % 9) * -1.7}s`,
+              animationDuration: `${9 + (i % 7) * 2}s`,
+              width: `${3 + (i % 3) * 2}px`,
+              height: `${3 + (i % 3) * 2}px`,
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="relative z-10">
+
+    
+
       {/* HERO – WINTER EDITION */}
       <section className="relative py-24 md:py-36 px-5 sm:px-6 md:px-16 overflow-hidden bg-gradient-to-b from-[#07100a] via-[#050805] to-black">
 
