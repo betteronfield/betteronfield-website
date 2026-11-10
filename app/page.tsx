@@ -115,7 +115,30 @@ export default function Home() {
   </a>
 
 </nav>
+{/* MOBILE MENU */}
+<details className="relative lg:hidden">
+  <summary className="list-none cursor-pointer bg-lime-400 text-black px-5 py-3 rounded-xl font-black text-sm">
+    ☰ MENU
+  </summary>
 
+  <div className="absolute right-0 top-full mt-3 w-64 bg-[#080d09] border border-lime-400/40 rounded-2xl p-4 shadow-xl flex flex-col gap-4 uppercase text-sm font-bold">
+
+    <a href="/" className="hover:text-lime-400">Strona główna</a>
+
+    <a href="/#oferta" className="hover:text-lime-400">Oferta</a>
+
+    <a href="/#omnie" className="hover:text-lime-400">O mnie</a>
+
+    <a href="/pre-winter-camp-2027" className="hover:text-lime-400">Pre-Winter Camp 2027</a>
+
+    <a href="/winter-camp-2027" className="hover:text-lime-400">Winter Camp 2027</a>
+
+    <a href="/summer-camp-2026" className="hover:text-lime-400">Letnie półkolonie 2026</a>
+
+    <a href="/#kontakt" className="hover:text-lime-400">Kontakt</a>
+
+  </div>
+</details>
           {/* BUTTON */}
           
 
