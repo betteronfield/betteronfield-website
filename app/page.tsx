@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* OFFER SECTION */}
-    <section id="oferta" className="relative py-40 px-6 md:px-16 overflow-hidden">
+ <section id="oferta" className="relative py-40 px-6 md:px-16 overflow-hidden bg-transparent">
 
      
         <div className="relative z-10 max-w-7xl mx-auto">
@@ -592,7 +592,7 @@ export default function Home() {
 
       </section>
 {/* ABOUT SECTION */}
-<section id="omnie" className="relative py-40 px-6 md:px-16 overflow-hidden">
+<section id="omnie" className="relative py-40 px-6 md:px-16 overflow-hidden bg-transparent">
 
   {/* GLOW BACKGROUNDS */}
  
@@ -605,8 +605,7 @@ export default function Home() {
       <div className="relative">
 
         {/* MAIN IMAGE */}
-        <div className="relative rounded-[40px] overflow-hidden border border-lime-400/20 shadow-[0_0_100px_rgba(163,230,53,0.3)]">
-
+       <div className="relative rounded-[40px] overflow-hidden border border-lime-400/20">
           <img
             src="/trener.JPG"
             alt="Michael Kukulski"
@@ -718,7 +717,7 @@ export default function Home() {
 
 </section>
 {/* CONTACT SECTION */}
-<section id="kontakt" className="relative py-40 px-6 md:px-16 overflow-hidden">
+<section id="kontakt" className="relative py-40 px-6 md:px-16 overflow-hidden bg-transparent">
 
 
 
