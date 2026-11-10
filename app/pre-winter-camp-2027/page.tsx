@@ -66,47 +66,15 @@ export default function PreWinterCampPage() {
     
 
       {/* HERO – WINTER EDITION */}
-      <section className="relative py-24 md:py-36 px-5 sm:px-6 md:px-16 overflow-hidden bg-gradient-to-b from-[#07100a] via-[#050805] to-black">
-
-        <style>{`
-          @keyframes bof-snow {
-            0% { transform: translate3d(0,-10vh,0); opacity: 0; }
-            15% { opacity: .8; }
-            85% { opacity: .7; }
-            100% { transform: translate3d(35px,110vh,0); opacity: 0; }
-          }
-          .bof-snow {
-            position: absolute;
-            top: -20px;
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background: #d9f99d;
-            box-shadow: 0 0 10px rgba(163,230,53,.8);
-            animation: bof-snow linear infinite;
-          }
+     <section className="relative py-24 md:py-36 px-5 sm:px-6 md:px-16 overflow-hidden">
+       
         `}</style>
 
         {/* ZIMOWE ŚWIATŁA */}
         <div className="absolute top-[-250px] left-[-200px] w-[700px] h-[700px] bg-lime-400/15 blur-[180px] rounded-full" />
         <div className="absolute bottom-[-250px] right-[-200px] w-[700px] h-[700px] bg-emerald-500/10 blur-[180px] rounded-full" />
 
-        {/* ŚNIEG */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-          {Array.from({ length: 35 }).map((_, i) => (
-            <span
-              key={i}
-              className="bof-snow"
-              style={{
-                left: `${(i * 37) % 100}%`,
-                animationDelay: `${(i % 9) * -1.7}s`,
-                animationDuration: `${9 + (i % 7) * 2}s`,
-                width: `${3 + (i % 3) * 2}px`,
-                height: `${3 + (i % 3) * 2}px`,
-              }}
-            />
-          ))}
-        </div>
+       
 
         {/* TREŚĆ HERO */}
         <div className="relative z-10 max-w-6xl mx-auto text-center">
@@ -172,7 +140,7 @@ export default function PreWinterCampPage() {
 
      
       {/* DETAILS – WINTER EDITION */}
-      <section className="relative px-5 sm:px-6 md:px-16 py-20 bg-gradient-to-b from-black via-[#081208] to-[#050805] overflow-hidden">
+      <section className="relative px-5 sm:px-6 md:px-16 py-20 overflow-hidden">
 
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-lime-400/10 blur-[150px] rounded-full pointer-events-none" />
 
@@ -212,7 +180,7 @@ export default function PreWinterCampPage() {
 
       
       {/* ATTRACTIONS – WINTER EDITION */}
-      <section className="relative px-5 sm:px-6 md:px-16 py-24 bg-gradient-to-b from-[#050805] via-[#081208] to-[#050805] overflow-hidden">
+      <section className="relative px-5 sm:px-6 md:px-16 py-24 overflow-hidden">
 
         <div className="absolute top-0 left-[-150px] w-[450px] h-[450px] bg-lime-400/10 blur-[150px] rounded-full pointer-events-none" />
         <div className="absolute bottom-0 right-[-150px] w-[450px] h-[450px] bg-emerald-400/10 blur-[150px] rounded-full pointer-events-none" />
@@ -330,8 +298,8 @@ export default function PreWinterCampPage() {
 
 
       {/* PAYMENT */}
-      <section className="px-5 sm:px-6 md:px-16 py-20 bg-[#050805]">
-        <div className="max-w-4xl mx-auto text-center">
+     <section className="relative px-5 sm:px-6 md:px-16 py-24 overflow-hidden">
+       <div className="relative z-10 max-w-4xl mx-auto text-center">
           <p className="text-lime-400 uppercase tracking-[5px] font-black mb-4">
             Rezerwacja miejsca
           </p>
