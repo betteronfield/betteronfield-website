@@ -71,9 +71,7 @@ export default function PreWinterCampPage() {
       
 
         {/* ZIMOWE ŚWIATŁA */}
-        <div className="absolute top-[-250px] left-[-200px] w-[700px] h-[700px] bg-lime-400/15 blur-[180px] rounded-full" />
-        <div className="absolute bottom-[-250px] right-[-200px] w-[700px] h-[700px] bg-emerald-500/10 blur-[180px] rounded-full" />
-
+       
        
 
         {/* TREŚĆ HERO */}
