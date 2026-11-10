@@ -130,49 +130,93 @@ export default function PreWinterCampPage() {
         </div>
       </section>
 
-      {/* ATTRACTIONS */}
-      <section className="px-5 sm:px-6 md:px-16 py-20 bg-[#050805]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
+      
+      {/* ATTRACTIONS – WINTER EDITION */}
+      <section className="relative px-5 sm:px-6 md:px-16 py-24 bg-gradient-to-b from-[#050805] via-[#081208] to-[#050805] overflow-hidden">
+
+        <div className="absolute top-0 left-[-150px] w-[450px] h-[450px] bg-lime-400/10 blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute bottom-0 right-[-150px] w-[450px] h-[450px] bg-emerald-400/10 blur-[150px] rounded-full pointer-events-none" />
+
+        <div className="relative z-10 max-w-6xl mx-auto">
+
+          <div className="text-center mb-16">
             <p className="text-lime-400 uppercase tracking-[5px] font-black mb-4">
               Dwa dni, dwie przygody
             </p>
             <h2 className="text-4xl md:text-6xl font-black uppercase">
-              Co nas czeka?
+              Co nas <span className="text-lime-400">czeka?</span>
             </h2>
+            <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
+              Zimowy camp, sportowe emocje i atrakcje, których nie da się zapomnieć.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="rounded-3xl overflow-hidden border border-lime-400/20 bg-[#0d0d0d] p-8 md:p-10">
-              <p className="text-lime-400 font-black tracking-widest mb-4">
-                DZIEŃ 1 • 4 STYCZNIA
-              </p>
-              <h3 className="text-3xl font-black uppercase mb-4">
-                Hangar 646
-              </h3>
-              <p className="text-gray-300 leading-relaxed">
-                Trening piłkarski, wspólny wyjazd i aktywność na
-                trampolinach. Na zakończenie dnia wracamy do sportowej
-                rywalizacji na boisku.
-              </p>
+
+            <div className="group relative rounded-3xl overflow-hidden border border-lime-400/20 bg-[#0b100b] p-8 md:p-10 transition-all duration-500 hover:border-lime-400/70 hover:shadow-[0_0_45px_rgba(163,230,53,0.15)] hover:-translate-y-2">
+
+              <div className="absolute top-0 right-0 w-48 h-48 bg-lime-400/10 blur-[70px] rounded-full group-hover:bg-lime-400/20 transition" />
+
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-8">
+                  <span className="text-lime-400 font-black tracking-widest text-sm">
+                    DZIEŃ 1 • 4 STYCZNIA
+                  </span>
+                  <span className="text-3xl">❄️</span>
+                </div>
+
+                <h3 className="text-3xl md:text-4xl font-black uppercase mb-5 group-hover:text-lime-400 transition">
+                  Hangar 646
+                </h3>
+
+                <div className="w-16 h-1 bg-lime-400 rounded-full mb-6 shadow-[0_0_15px_rgba(163,230,53,0.7)]" />
+
+                <p className="text-gray-300 leading-relaxed text-lg">
+                  Trening piłkarski, wspólny wyjazd i aktywność na
+                  trampolinach. Na zakończenie dnia wracamy do sportowej
+                  rywalizacji na boisku.
+                </p>
+
+                <p className="text-lime-400 font-bold mt-8 uppercase tracking-wider text-sm">
+                  Trampoliny • Sport • Energia
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-3xl overflow-hidden border border-lime-400/20 bg-[#0d0d0d] p-8 md:p-10">
-              <p className="text-lime-400 font-black tracking-widest mb-4">
-                DZIEŃ 2 • 5 STYCZNIA
-              </p>
-              <h3 className="text-3xl font-black uppercase mb-4">
-                Fort Żerań
-              </h3>
-              <p className="text-gray-300 leading-relaxed">
-                Trening piłkarski, wspólny posiłek i emocjonująca
-                rozgrywka Laser Tag. Na koniec podsumowanie campu
-                i sportowe zakończenie.
-              </p>
+            <div className="group relative rounded-3xl overflow-hidden border border-lime-400/20 bg-[#0b100b] p-8 md:p-10 transition-all duration-500 hover:border-lime-400/70 hover:shadow-[0_0_45px_rgba(163,230,53,0.15)] hover:-translate-y-2">
+
+              <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-400/10 blur-[70px] rounded-full group-hover:bg-lime-400/20 transition" />
+
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-8">
+                  <span className="text-lime-400 font-black tracking-widest text-sm">
+                    DZIEŃ 2 • 5 STYCZNIA
+                  </span>
+                  <span className="text-3xl">🎯</span>
+                </div>
+
+                <h3 className="text-3xl md:text-4xl font-black uppercase mb-5 group-hover:text-lime-400 transition">
+                  Fort Żerań
+                </h3>
+
+                <div className="w-16 h-1 bg-lime-400 rounded-full mb-6 shadow-[0_0_15px_rgba(163,230,53,0.7)]" />
+
+                <p className="text-gray-300 leading-relaxed text-lg">
+                  Trening piłkarski, wspólny posiłek i emocjonująca
+                  rozgrywka Laser Tag. Na koniec podsumowanie campu
+                  i sportowe zakończenie.
+                </p>
+
+                <p className="text-lime-400 font-bold mt-8 uppercase tracking-wider text-sm">
+                  Laser Tag • Rywalizacja • Emocje
+                </p>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
+
 
      
       {/* PLAN ZAJĘĆ – GRAFIKA */}
