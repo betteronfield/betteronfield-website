@@ -321,15 +321,7 @@ export default function PreWinterCampPage() {
               w pierwszym dniu campu.
             </p>
           </div>
-
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeeiq0wtvXixYe828eswYu1j8t02dzv8__DALGnLVsoXrFtfw/viewform?usp=header"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex bg-lime-400 text-black px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition"
-          >
-            📝 FORMULARZ ZGŁOSZENIOWY
-         {/* BONUS ZA POLECENIE */}
+  {/* BONUS ZA POLECENIE */}
 <div className="mt-8 mb-8 rounded-2xl border border-lime-400/40 bg-lime-400/5 p-5 text-center shadow-[0_0_30px_rgba(163,230,53,0.08)]">
 
   <p className="text-lime-400 font-black uppercase tracking-wider text-sm">
@@ -345,6 +337,13 @@ export default function PreWinterCampPage() {
   </p>
 
 </div>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeeiq0wtvXixYe828eswYu1j8t02dzv8__DALGnLVsoXrFtfw/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex bg-lime-400 text-black px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition"
+          >
+            📝 FORMULARZ ZGŁOSZENIOWY
           </a>
 
           <p className="text-gray-500 text-sm mt-8">
