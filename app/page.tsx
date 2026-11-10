@@ -31,7 +31,7 @@ export default function Home() {
 
             <div>
 
-              <h1 className="text-3xl font-black uppercase">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-black uppercase whitespace-nowrap">
                 Better
                 <span className="text-lime-400">
                   OnField
@@ -117,7 +117,7 @@ export default function Home() {
 </nav>
 {/* MOBILE MENU */}
 <details className="relative lg:hidden">
-  <summary className="list-none cursor-pointer bg-lime-400 text-black px-5 py-3 rounded-xl font-black text-sm">
+  <summary className="list-none cursor-pointer whitespace-nowrap shrink-0 bg-lime-400 text-black px-3 py-3 rounded-xl font-black text-xs">
     ☰ MENU
   </summary>
 
