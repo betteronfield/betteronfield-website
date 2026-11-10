@@ -218,25 +218,7 @@ export default function Home() {
       {/* OFFER SECTION */}
     <section id="oferta" className="relative py-40 px-6 md:px-16 overflow-hidden">
 
-        {/* BACKGROUND GLOWS */}
-        <div className="absolute top-[-400px] left-[-300px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[220px] rounded-full"></div>
-
-        <div className="absolute bottom-[-500px] right-[-300px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[220px] rounded-full"></div>
-
-        {/* GRID */}
-        <div className="absolute inset-0 opacity-[0.06]">
-
-          <div
-            className="w-full h-full"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(163,230,53,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(163,230,53,0.3) 1px, transparent 1px)",
-              backgroundSize: "80px 80px",
-            }}
-          />
-
-        </div>
-
+     
         <div className="relative z-10 max-w-7xl mx-auto">
 
           {/* TITLE */}
