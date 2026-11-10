@@ -615,23 +615,7 @@ export default function Home() {
 <section id="omnie" className="relative py-40 px-6 md:px-16 overflow-hidden">
 
   {/* GLOW BACKGROUNDS */}
-  <div className="absolute top-[-300px] left-[-200px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[220px] rounded-full"></div>
-
-  <div className="absolute bottom-[-300px] right-[-200px] w-[1200px] h-[1200px] bg-lime-400/20 blur-[220px] rounded-full"></div>
-
-  {/* GRID BACKGROUND */}
-  <div className="absolute inset-0 opacity-[0.05]">
-
-    <div
-      className="w-full h-full"
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(163,230,53,0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(163,230,53,0.25) 1px, transparent 1px)",
-        backgroundSize: "70px 70px",
-      }}
-    />
-
-  </div>
+ 
 
   <div className="relative z-10 max-w-7xl mx-auto">
 
