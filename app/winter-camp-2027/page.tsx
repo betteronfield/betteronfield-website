@@ -15,77 +15,6 @@ const turns = [
   },
 ];
 
-const days = [
-  {
-    day: "PONIEDZIAŁEK",
-    items: [
-      ["09:15", "Zbiórka uczestników"],
-      ["09:30–11:00", "Testy sprawnościowe i motoryczne"],
-      ["11:00", "Przerwa na przekąskę"],
-      ["11:15", "Stretching i mobilność"],
-      ["11:30", "Siatkonoga i gry rekreacyjne"],
-      ["13:45", "Odpoczynek"],
-      ["14:00", "Przygotowanie do treningu"],
-      ["14:45", "Trening piłkarski"],
-      ["16:00", "Odbiór uczestników"],
-    ],
-  },
-  {
-    day: "WTOREK",
-    items: [
-      ["09:15", "Zbiórka uczestników"],
-      ["09:30–11:00", "Trening piłkarski i motoryczny"],
-      ["11:00", "Przerwa na przekąskę"],
-      ["11:15", "Wyjście na atrakcję"],
-      ["13:45", "Powrót z atrakcji"],
-      ["14:00", "Przygotowanie do treningu"],
-      ["14:45", "Trening piłkarski"],
-      ["16:00", "Odbiór uczestników"],
-    ],
-  },
-  {
-    day: "ŚRODA",
-    items: [
-      ["09:15", "Zbiórka uczestników"],
-      ["09:30–11:00", "Trening piłkarski i motoryczny"],
-      ["11:00", "Przerwa na przekąskę"],
-      ["11:15", "Stretching i mobilność"],
-      ["11:30", "Siatkonoga i gry rekreacyjne"],
-      ["13:45", "Odpoczynek"],
-      ["14:00", "Przygotowanie do treningu"],
-      ["14:45", "Trening piłkarski"],
-      ["16:00", "Odbiór uczestników"],
-    ],
-  },
-  {
-    day: "CZWARTEK",
-    items: [
-      ["09:15", "Zbiórka uczestników"],
-      ["09:30–11:00", "Trening piłkarski i motoryczny"],
-      ["11:00", "Przerwa na przekąskę"],
-      ["11:15", "Wyjście na atrakcję"],
-      ["13:45", "Powrót z atrakcji"],
-      ["14:00", "Przygotowanie do treningu"],
-      ["14:45", "Trening piłkarski"],
-      ["16:00", "Odbiór uczestników"],
-    ],
-  },
-  {
-    day: "PIĄTEK",
-    items: [
-      ["09:15", "Zbiórka uczestników"],
-      ["09:30–11:00", "Trening piłkarski i motoryczny"],
-      ["11:00", "Przerwa na przekąskę"],
-      ["11:15", "Stretching i mobilność"],
-      ["11:30", "Siatkonoga i gry rekreacyjne"],
-      ["13:45", "Odpoczynek"],
-      ["14:00", "Przygotowanie do treningu"],
-      ["14:45", "Trening piłkarski"],
-      ["16:00", "Odbiór uczestników"],
-    ],
-  },
-];
-
 export default function WinterCampPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#050805] text-white">
@@ -113,8 +42,10 @@ export default function WinterCampPage() {
         html { scroll-behavior: smooth; }
       `}</style>
 
+      {/* TŁO */}
       <div className="bof-winter-background fixed inset-0 pointer-events-none z-0" />
 
+      {/* ŚNIEG */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-50" aria-hidden="true">
         {Array.from({ length: 45 }).map((_, i) => (
           <span
@@ -132,8 +63,19 @@ export default function WinterCampPage() {
       </div>
 
       <div className="relative z-10">
+
+        {/* POWRÓT NA STRONĘ GŁÓWNĄ */}
+        <div className="mx-auto max-w-6xl px-5 pt-6">
+          <a
+            href="/"
+            className="inline-flex items-center gap-2 text-sm font-bold text-gray-400 transition hover:text-lime-400"
+          >
+            ← POWRÓT NA STRONĘ GŁÓWNĄ
+          </a>
+        </div>
+
         {/* HERO */}
-        <section className="mx-auto max-w-6xl px-5 pb-16 pt-20 text-center md:pb-24 md:pt-28">
+        <section className="mx-auto max-w-6xl px-5 pb-16 pt-16 text-center md:pb-24 md:pt-24">
           <p className="mb-5 text-sm font-black uppercase tracking-[0.35em] text-lime-400">
             BETTERONFIELD • ZIMA 2027
           </p>
@@ -187,7 +129,7 @@ export default function WinterCampPage() {
 
         {/* MAŁA GRUPA */}
         <section id="oferta" className="border-y border-white/10 bg-white/[0.025]">
-          <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 md:grid-cols-2 md:items-center">
+          <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-2 md:items-center">
             <div>
               <p className="text-sm font-black uppercase tracking-widest text-lime-400">
                 DLACZEGO WINTER CAMP?
@@ -197,6 +139,7 @@ export default function WinterCampPage() {
                 <span className="block text-lime-400">w każdym turnusie.</span>
               </h2>
             </div>
+
             <div className="space-y-3 text-gray-300">
               <p>✓ Więcej uwagi dla każdego zawodnika.</p>
               <p>✓ Indywidualne wskazówki i informacja zwrotna.</p>
@@ -207,23 +150,37 @@ export default function WinterCampPage() {
         </section>
 
         {/* TERMINY */}
-        <section className="mx-auto max-w-6xl px-5 py-14">
+        <section className="mx-auto max-w-6xl px-5 py-12">
           <div className="text-center">
             <p className="text-sm font-black uppercase tracking-widest text-lime-400">
-              WYBIERZ SWÓJ TERMIN
+              FERIE ZIMOWE 2027
             </p>
             <h2 className="mt-3 text-3xl font-black uppercase md:text-5xl">
-              Dwa turnusy
+              Wybierz swój turnus
             </h2>
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {turns.map((turn) => (
-              <div key={turn.number} className="rounded-2xl border border-lime-400/30 bg-lime-400/[0.04] p-7">
-                <p className="text-sm font-black tracking-widest text-lime-400">{turn.label}</p>
-                <p className="mt-3 text-3xl font-black md:text-4xl">{turn.date}</p>
-                <p className="mt-3 text-sm text-gray-400">Poniedziałek – piątek • 9:15–16:00</p>
-                <a href={signupUrl} target="_blank" rel="noreferrer" className="mt-6 inline-block font-black text-lime-400 hover:text-lime-300">
+              <div
+                key={turn.number}
+                className="rounded-2xl border border-lime-400/30 bg-lime-400/[0.04] p-7"
+              >
+                <p className="text-sm font-black tracking-widest text-lime-400">
+                  {turn.label}
+                </p>
+                <p className="mt-3 text-3xl font-black md:text-4xl">
+                  {turn.date}
+                </p>
+                <p className="mt-3 text-sm text-gray-400">
+                  Poniedziałek – piątek • 9:15–16:00
+                </p>
+                <a
+                  href={signupUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 inline-block font-black text-lime-400 transition hover:text-lime-300"
+                >
                   ZAPISZ SIĘ →
                 </a>
               </div>
@@ -231,84 +188,74 @@ export default function WinterCampPage() {
           </div>
         </section>
 
-        {/* PROGRAM */}
-        <section className="border-y border-white/10 bg-white/[0.025]">
-          <div className="mx-auto max-w-6xl px-5 py-14">
-            <div className="text-center">
+        {/* PLAN ZAJĘĆ - GRAFIKA */}
+        <section id="plan" className="border-y border-white/10 bg-white/[0.025]">
+          <div className="mx-auto max-w-6xl px-5 py-12 md:py-16">
+            <div className="mb-8 text-center">
               <p className="text-sm font-black uppercase tracking-widest text-lime-400">
-                PLAN CAMPu
+                WINTER CAMP 2027
               </p>
               <h2 className="mt-3 text-3xl font-black uppercase md:text-5xl">
-                Każdy dzień ma znaczenie
+                Plan zajęć
               </h2>
-              <p className="mt-4 text-gray-400">
-                Godziny i aktywności zaplanowane na pięć dni campu.
+              <p className="mt-3 text-gray-400">
+                Pięć dni treningów, aktywności i sportowych wyzwań.
               </p>
             </div>
 
-            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {days.map((day) => (
-                <div key={day.day} className="rounded-2xl border border-white/10 bg-[#0b100b] p-5">
-                  <h3 className="mb-4 border-b border-lime-400/30 pb-3 font-black tracking-widest text-lime-400">
-                    {day.day}
-                  </h3>
-                  <div className="space-y-3">
-                    {day.items.map(([time, activity]) => (
-                      <div key={`${time}-${activity}`} className="flex gap-3 text-sm">
-                        <span className="w-24 shrink-0 font-bold text-lime-300">{time}</span>
-                        <span className="text-gray-300">{activity}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
+            <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-lime-400/5">
+              <img
+                src="/winter-camp-plan-2027.png"
+                alt="Plan zajęć Winter Camp BetterOnField 2027"
+                className="block h-auto w-full"
+              />
             </div>
           </div>
         </section>
 
-        {/* CENA */}
-        <section className="mx-auto max-w-6xl px-5 py-14">
+        {/* CENA I POLECENIE */}
+        <section className="mx-auto max-w-6xl px-5 py-12">
           <div className="mx-auto max-w-3xl rounded-3xl border border-lime-400/30 bg-lime-400/[0.05] p-7 text-center md:p-10">
             <p className="text-sm font-black uppercase tracking-widest text-lime-400">
               INWESTYCJA W ROZWÓJ
             </p>
+
             <p className="mt-4 text-5xl font-black md:text-7xl">
               1390 <span className="text-2xl text-lime-400">PLN</span>
             </p>
-            <p className="mt-3 text-gray-300">za jeden pięciodniowy turnus</p>
+
+            <p className="mt-3 text-gray-300">
+              za jeden pięciodniowy turnus
+            </p>
 
             <div className="mx-auto mt-8 max-w-xl rounded-2xl border border-lime-400/30 bg-lime-400/[0.06] p-5">
               <p className="font-black uppercase tracking-wider text-lime-400">
                 🤝 POLEĆ I ZYSKAJ!
               </p>
-              <p className="my-2 text-4xl font-black text-lime-400">-50 zł</p>
+              <p className="my-2 text-4xl font-black text-lime-400">
+                -50 zł
+              </p>
               <p className="text-sm text-gray-300">
                 Znajomy zapisuje się na camp? Ty otrzymujesz 50 zł rabatu!
               </p>
             </div>
-
-            <a
-              href={signupUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-8 inline-block rounded-xl bg-lime-400 px-9 py-4 font-black uppercase text-black transition hover:bg-lime-300"
-            >
-              Przejdź do zapisów
-            </a>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="border-t border-white/10 px-5 py-16 text-center">
+        {/* KOŃCOWE ZAPISY */}
+        <section className="border-t border-white/10 px-5 py-14 text-center">
           <p className="text-sm font-black uppercase tracking-[0.3em] text-lime-400">
             BETTERONFIELD
           </p>
+
           <h2 className="mx-auto mt-4 max-w-3xl text-3xl font-black uppercase md:text-5xl">
             Zadbaj o rozwój swojego zawodnika tej zimy.
           </h2>
+
           <p className="mt-4 text-gray-400">
             Liczba miejsc ograniczona – maksymalnie 10 osób na turnus.
           </p>
+
           <a
             href={signupUrl}
             target="_blank"
@@ -318,6 +265,7 @@ export default function WinterCampPage() {
             Zapisz dziecko na Winter Camp
           </a>
         </section>
+
       </div>
     </main>
   );
