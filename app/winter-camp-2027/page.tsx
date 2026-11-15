@@ -112,19 +112,21 @@ export default function WinterCampPage() {
             </a>
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
-            {[
-              ["10", "uczestników maks."],
-              ["5 DNI", "aktywnego campu"],
-              ["9:15–16:00", "godziny"],
-              ["1390 zł", "za turnus"],
-            ].map(([value, label]) => (
-              <div key={label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                <p className="text-xl font-black text-lime-400 md:text-2xl">{value}</p>
-                <p className="mt-1 text-xs text-gray-400">{label}</p>
-              </div>
-            ))}
-          </div>
+         <div className="mx-auto mt-12 grid max-w-4xl grid-cols-2 gap-3 md:grid-cols-3">
+  {[
+    ["10", "uczestników maks."],
+    ["5 DNI", "aktywnego campu"],
+    ["9:15–16:00", "godziny"],
+    ["1390 zł", "za turnus"],
+    ["2010–2017", "roczniki uczestników"],
+    ["BIELANY", "Warszawa • dokładne miejsce wkrótce"],
+  ].map(([value, label]) => (
+    <div key={label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+      <p className="text-xl font-black text-lime-400 md:text-2xl">{value}</p>
+      <p className="mt-1 text-xs text-gray-400">{label}</p>
+    </div>
+  ))}
+</div>
         </section>
 
         {/* MAŁA GRUPA */}
