@@ -315,6 +315,27 @@ export default function WinterCampPage() {
           </a>
         </section>
 
+{/* FOOTER */}
+<footer className="border-t border-white/10 px-5 py-10 text-center">
+  <p className="font-black text-2xl uppercase">
+    Better<span className="text-lime-400">OnField</span>
+  </p>
+
+  <p className="mt-3 text-sm text-gray-500">
+    Treningi piłkarsko-motoryczne • Warszawa
+  </p>
+
+  <a
+    href="https://wa.me/48535678992"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-5 inline-flex items-center gap-2 font-bold text-lime-400 transition hover:text-lime-300"
+  >
+    <span>Kontakt przez WhatsApp</span>
+    <span>↗</span>
+  </a>
+</footer>
+
       </div>
     </main>
   );
