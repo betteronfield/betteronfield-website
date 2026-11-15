@@ -213,34 +213,83 @@ export default function WinterCampPage() {
           </div>
         </section>
 
-        {/* CENA I POLECENIE */}
-        <section className="mx-auto max-w-6xl px-5 py-12">
-          <div className="mx-auto max-w-3xl rounded-3xl border border-lime-400/30 bg-lime-400/[0.05] p-7 text-center md:p-10">
-            <p className="text-sm font-black uppercase tracking-widest text-lime-400">
-              INWESTYCJA W ROZWÓJ
-            </p>
+       
+{/* CENA I PŁATNOŚĆ */}
+<section className="mx-auto max-w-6xl px-5 py-12">
+  <div className="mx-auto max-w-3xl rounded-3xl border border-lime-400/30 bg-lime-400/[0.05] p-7 text-center md:p-10">
+    <p className="text-sm font-black uppercase tracking-widest text-lime-400">
+      INWESTYCJA W ROZWÓJ
+    </p>
 
-            <p className="mt-4 text-5xl font-black md:text-7xl">
-              1390 <span className="text-2xl text-lime-400">PLN</span>
-            </p>
+    <p className="mt-4 text-5xl font-black md:text-7xl">
+      1390 <span className="text-2xl text-lime-400">PLN</span>
+    </p>
 
-            <p className="mt-3 text-gray-300">
-              za jeden pięciodniowy turnus
-            </p>
+    <p className="mt-3 text-gray-300">
+      za jeden pięciodniowy turnus
+    </p>
 
-            <div className="mx-auto mt-8 max-w-xl rounded-2xl border border-lime-400/30 bg-lime-400/[0.06] p-5">
-              <p className="font-black uppercase tracking-wider text-lime-400">
-                🤝 POLEĆ I ZYSKAJ!
-              </p>
-              <p className="my-2 text-4xl font-black text-lime-400">
-                -50 zł
-              </p>
-              <p className="text-sm text-gray-300">
-                Znajomy zapisuje się na camp? Ty otrzymujesz 50 zł rabatu!
-              </p>
-            </div>
-          </div>
-        </section>
+    {/* PŁATNOŚĆ */}
+    <div className="mx-auto mt-8 max-w-xl rounded-2xl border border-white/10 bg-black/30 p-6 text-left">
+      <h3 className="text-center text-lg font-black uppercase text-lime-400">
+        Rezerwacja miejsca i płatność
+      </h3>
+
+      <div className="mt-5 text-center">
+        <p className="text-sm font-bold uppercase text-gray-400">
+          Zadatek rezerwacyjny
+        </p>
+        <p className="mt-1 text-5xl font-black text-lime-400">
+          300 zł
+        </p>
+      </div>
+
+      <div className="mt-6 space-y-3 text-sm leading-relaxed text-gray-300">
+        <p>
+          <strong className="text-white">BLIK na telefon:</strong>{" "}
+          <span className="font-bold text-lime-400">535 678 992</span>
+        </p>
+
+        <p>
+          W tytule płatności wpisz:{" "}
+          <strong className="text-white">
+            Zadatek – imię i nazwisko dziecka
+          </strong>.
+        </p>
+
+        <p>
+          Pozostałe <strong className="text-white">1090 zł</strong>{" "}
+          regulowane jest na miejscu w pierwszym dniu turnusu.
+        </p>
+
+        <p>
+          Istnieje również możliwość opłacenia całej kwoty
+          <strong className="text-white"> 1390 zł </strong>
+          na miejscu.
+        </p>
+
+        <p>
+          Inna forma płatności możliwa po wcześniejszym uzgodnieniu
+          z organizatorem.
+        </p>
+      </div>
+    </div>
+
+    {/* POLEĆ I ZYSKAJ */}
+    <div className="mx-auto mt-8 max-w-xl rounded-2xl border border-lime-400/30 bg-lime-400/[0.06] p-5">
+      <p className="font-black uppercase tracking-wider text-lime-400">
+        🤝 POLEĆ I ZYSKAJ!
+      </p>
+      <p className="my-2 text-4xl font-black text-lime-400">
+        -50 zł
+      </p>
+      <p className="text-sm text-gray-300">
+        Znajomy zapisuje się na camp? Ty otrzymujesz 50 zł rabatu!
+      </p>
+    </div>
+  </div>
+</section>
+
 
         {/* KOŃCOWE ZAPISY */}
         <section className="border-t border-white/10 px-5 py-14 text-center">
